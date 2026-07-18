@@ -1,0 +1,3479 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="ڈائری">
+<link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAIACAYAAAD0eNT6AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAOxAAADsQBlSsOGwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAABumSURBVHic7d1rrGVneR/w/3jMTMCXFgiEIgpOUwq1PaYoIiWJmgaww0Wqkg9tE5oWImwRUoqISnr5VvVT1agUArYhFe4lqFWTtB96EVZtY1PaqiClhMbmYi6KMVHSgM3VBmN7PP2wxrFj5pw9Z9Y6+1nvfn4/aQnLYp/nWdvvu9Z/v2vvtRIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA4ImOVDcwiO9L8uNJXprkzyf5/iTPSHJBkmN1bQGUejDJ/Um+muS+JH+Y5DNJPp3kziS/neSesu7YlwCwt6cleW2S1yV5SbxXAAf1SJLbk9x6erslyQOlHfFHnNS+27OT/FKSN2b6hA/AMr6e5DeT/FqS/5nkVG07vQkAj3lSkl9M8o/ixA9w2D6X5JeT/JtMlxLYMgFg8vwkv57kxdWNADTze0n+WZJfjcsDWyUAJD+ZaTnq4upGABr7fJK3JLmxupEuzqtuoNg1Sf5jnPwBqv1Akg9kOiY/p7iXFjqvAFyT5F+k93sAsEZfSfJzSf5LcR877Wh1A0V+Msn7YwUEYI2enORnMq3O3pbp54QsrOOn3+cn+a1Y9gcYwYczfWj7WnUju6ZbAHhSko/Gt/0BRnJ7klcl+f3qRnZJtyXwX4yTP8BoTiT5X0n+bHUju6TTCsCzM92b+sLqRgA4J3cl+dFYCVhEpxWAX4qTP8DILkny35I8tbiPndBlBeBpSe6OW/wC7IIPJ7kyyUPVjYysywrA34iTP8Cu+LEk/6S6idF1WQH4aJIfWuhv3Z7khkyPtbwr07Ow9zP3aVdd/hvBYeg+/w57/49l+nD1jCR/JskLk7w0ycuSPHNm7U1OJfmpJP/5kOswsO/LdBOJUzO3B5L8Qg6+ajK3LnDuus+/qv0/kikIXJfprn5z+9hruzduG8w+fjrLnPxfdo71ux+AoFL3+beG/b8wydsyfXP/MELAf1ioT3bQOzJ/gL1pRv01TEDoqvv8W9P+X5jpsb8PLdDXE7dXLdwrO+LGzBtYv5N5X5Zc0wSEbrrPvzXu/w8m+dwCvT1++2yS7zmkfhnY3IH21pn11zgBoYvu82+t+39xpi/vLRkC3nKI/TKoezJvUF06s/5aJyB00H3+rXn/z0/yvgV6fHS7O9OvEuCPfCfzBtVFM+uveQLCrus+/9a+/0eybAi4Zgs9M5DqCVBdHzrrPv9G2P/zs9zlgDsz/r0bWFD1BKiuD511n3+j7P9FST69QL+nMj0siLPQ5VbAAKzXN5P8bJKHF/hbr1vgb7AjqhNwdX3orPv8G23/3z6z31NJvpbkydtunHWqngDV9aGz7vNvtP2/KMkfzOj30e3V2258RC4BALAW30zyzxf4O+d663Z2THUCrq4PnXWffyPu/4WZ/wCh/7P1rgdkBQCANbkvyb+f+Tf+QpKnLdDLThMAAFib9898/XlJXrxEI7tMAABgbT6S5Msz/8afW6KRXSYAALA2p5J8aObfeMECfew0AQCANfrIzNcLABsIAACs0Z0zX/+sRbrYYQIAAGv02Zmvv3iRLnaYAADAGn115uvnPsp95wkAAKzRN2a+3grABh2emzz3blZz36Pq+tBZ9/k3+v6P3v+qWQEAgIYEAABoSAAAgIYEAABoSAAAgIYEAABoSAAAgIbOr26A4ZxIck2SVyS5JMkFpd1Q7f4kdyW5Jcn7ktxR2g3A45yauY1efynHk1yf5GTm75NtN7eHk1yb5FjWY+4+jW70/R+9/1XrcJekuYPAnQCnk/+NSV5W3QhDuDXJq5M8WN1IdmP+zTH6/o/e/6r5DgBn451x8ufsvTzJ26ubAPbXIR1VJ8jq+nOdSPLxCIsczMkkL0ryieI+Rp9/c42+/6P3v2oO6mxyTYwTDu5okqurmwD25sDOJldWN8CwrqpuANibAMAmz61ugGE9r7oBYG8CAJv4KQ3nytiBFRMA2OSL1Q0wrLurGwD2JgCwyc3VDTCsm6obAPbW4ScS1T8jqa4/1+WZfgZ4tLgPxnIyyRVJPlncx+jzb67R93/0/lfNCgCb3JHkvdVNMJzrUn/yB/bRIR1VJ8jq+ks4luQDmR4ABJvckuQ1SR6qbiS7Mf/mGH3/R+9/1awAcDYezHRAvzbT0i6cyckk78p6Tv7APjqko+oEWV1/aZdlusPbVZkeB3xhaTdUuy/T44BvSnJD1rfsv2vz76BG3//R+1+1Dm9O9QCqrg+ddZ9/o+//6P2vmksAANCQAAAADQkAANCQAAAADQkAANCQAAAADQkAANCQAAAADQkAANCQAAAADQkAANCQAAAADQkAANCQAAAADQkAANDQ+dUNMJwTSa5J8ooklyS5oLQbqt2f5K4ktyR5X5I7SrsBeJxTM7fR6y/leJLrk5zM/H2y7eb2cJJrkxzLeszdp9GNvv+j979qR6ob2IK5g2Due1RdfwnHk9yY5GXVjTCEW5O8OsmD1Y1kN+bfHKPv/+j9r5rvAHA23hknf87ey5O8vboJYH8d0lF1gqyuP9eJJB+PsMjBnEzyoiSfKO5j9Pk31+j7P3r/q+agzibXxDjh4I4mubq6CWBvDuxscmV1AwzrquoGgL0JAGzy3OoGGNbzqhsA9iYAsImf0nCujB1YMQGATb5Y3QDDuru6AWBvAgCb3FzdAMO6qboBYG8dfiJR/TOS6vpzXZ7pZ4BHi/tgLCeTXJHkk8V9jD7/5hp9/0fvf9WsALDJHUneW90Ew7ku9Sd/YB8d0lF1gqyuv4RjST6Q6QFAsMktSV6T5KHqRrIb82+O0fd/9P5XzQoAZ+PBTAf0azMt7cKZnEzyrqzn5A/so0M6qk6Q1fWXdlmmO7xdlelxwBeWdkO1+zI9DvimJDdkfcv+uzb/Dmr0/R+9/1Xr8OZUD6Dq+tBZ9/k3+v6P3v+quQQAAA0JAADQkAAAAA0JAADQkAAAAA0JAADQkAAAAA0JAADQkAAAAA0JAADQkAAAAA0JAADQkAAAAA0JAADQkAAAAA2dX90AwzmR5Jokr0hySZILSruh2v1J7kpyS5L3JbmjtBuAxzk1cxu9/lKOJ7k+ycnM3yfbbm4PJ7k2ybGsx9x9Gt3o+z96/6t2pLqBLZg7COa+R9X1l3A8yY1JXlbdCEO4NcmrkzxY3Uh2Y/7NMfr+j97/qvkOAGfjnXHy5+y9PMnbq5sA9tchHVUnyOr6c51I8vEIixzMySQvSvKJ4j5Gn39zjb7/o/e/ag7qbHJNjBMO7miSq6ubAPbmwM4mV1Y3wLCuqm4A2JsAwCbPrW6AYT2vugFgbwIAm/gpDefK2IEVEwDY5IvVDTCsu6sbAPYmALDJzdUNMKybqhsA9tbhJxLVPyOprj/X5Zl+Bni0uA/GcjLJFUk+WdzH6PNvrtH3f/T+V80KAJvckeS91U0wnOtSf/IH9tEhHVUnyOr6SziW5AOZHgAEm9yS5DVJHqpuJLsx/+YYff9H73/VrABwNh7MdEC/NtPSLpzJySTvynpO/sA+OqSj6gRZXX9pl2W6w9tVmR4HfGFpN1S7L9PjgG9KckPWt+y/a/PvoEbf/9H7X7UOb071AKquD511n3+j7//o/a+aSwAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAALA9L8r0nIRPJ/nW6e1Tme6yeUVhX7CTTs3cRq8Pna1l/j0lyfWZbpe8V62TmcLBUxasu5b9P1ej90+x6gFUXR86W8P8e2GS3zlAzU8lObFQ7TXs/xyj90+x6gFUXR86q55/r8v0vISD1v1WkjcuUL96/+cavX+KVQ+g6vrQWdX8e3KSX1mg/q8luWBGH6Mff0bvn2LVA6i6PnRWMf8OuuS/aZtzSWD048/o/VOsegBV14fOtj3/znXJf9N2rpcERj/+jN4/xaoHUHV96Gxb82+pJf9N20EvCYx+/Bm9f4pVD6Dq+tDZNubf0kv+m7aDXBIY/fgzev8Uqx5A1fWhs8Oef4e15L9pO9tLAqMff0bvn2LVA6i6PnR2WPNvW0v+m7ZNlwRGP/6M3j/FqgdQdX3o7DDm37aX/Ddt+10SGP34M3r/FKseQNX1obOl51/Vkv+mba9LAqMff0bvn2LVA6i6PnS21Pxby5L/pu2JlwRGP/6M3j/FqgdQdX3obIn5t7Yl/03b4y8JjH78Gb1/ilUPoOr60Nnc+fdzWeeS/6btvtO9j378Gb3/VTtS3cAWzB0Ec9+j6vrQmZPAPNXHH8fPQ3RedQMAwPYJAADb9+0kP5/k9UnuL+4Fdlb1NaTq+tBZ9bX4M21P/N3+mr9kWG30/ilWPYCq60Nn1SfQJ2573blvrT8zrDZ6/xSrHkDV9aGz6hPoo9vZ3rt/bTcaqjZ6/xSrHkDV9aGz6hPoqRzs6X3Jui4JVBu9f4pVD6Dq+tBZ9Ql008N69rKWSwLVRu+fYtUDqLo+dFZ14jzbJf9Nqi8JVBu9f4pVD6Dq+tBZxUnzoEv+m1ReEqg2ev8Uqx5A1fWhs22fMM91yX+TqksC1Ubvn2LVA6i6PnS2rRPlUkv+m2z7kkC10funWPUAqq4PnW3jJLn0kv8m27wkUG30/ilWPYCq60Nnh32CPKwl/022dUmg2uj9U6x6AFXXh84O68S4rSX/TQ77kkC10funWPUAqq4PnR3GSXHbS/6bHOYlgWqj90+x6gFUXR86+3aWPSFWLflvchiXBNbwlELHT2apHkDV9aGzT2WZk+F9mR7du3avz3KXBD6x5d7PxPGTWaoHUHV96Oy6LHMivHTbjc9waaae5+7327fd+Bk4fjJL9QCqrg+dXZHkZM59/v2rJE/ZetfzPSVT7+e63w8n+f6td/3dHD+ZpXoAVdeH7t6Tg8+7UZb8N3l9zu2SwHUVzZ6B4yezVA+g6vrQ3ZOT3Jazn3OjLflvctBLAh9M8j0lnX43x09mqR5A1fWB6YR2ffa/HHDy9P9nxCX/TZ6Sad8eyf77f22S40U9nonjJ7NUD6Dq+sBjrkjy7kyfiL+d5IHT//yuJJcX9rUtJ/LY/j+Q6T34xOl/d0VhX3tx/DxER6ob2IK5g2Due1RdH2BUjp+H6LzqBgCA7RMAAKAhAQAAGhIAAKAhAQAAGhIAAKAhAQAAGhIAAKAhAQAAGhIAAKAhAQAAGhIAAKAhAQAAGhIAAKAhAQAAGhIAAKAhAQAAGhIAAKAhAQAAGhIAAKAhAQAAGhIAAKAhAQAAGjq/ugGALTqR5Jokr0hySZILSrsBDtWpmdvo9YHkeJLrk5zM/DlpG2d7S5KnhrbmDqDR60N3x5PcmvqTka1muz/JO5I8K7Qzd/CMXh+6e0/qT0K2+u3rSd6U5EhI0uONODXz9XPfo+r60NmJJB+PLzzzmA9n+h7IZ6sbqWZSALvsmjjO8cf9WJKPJXlldSPVTAxgl11Z3QCrdGGS/5TkZ6obqSQAALvsT1c3wGodT/Jvk7yhupEqHa4vV1+Dr64Pnc2df+y+hzJdDritupFt63ByqT4BV9eHzgQAzsa9Sf5iks9XN7JNLgEA0N3Tk/y7NDsnttpZANjDD6XZ9wE6LC9XL8FX14fOXALgIL6S5AVJ7qluZBusAADA5GlJ/n51E9vS4dNl9Sfw6vrQmRUADureJM9J8kB1I4fNCgAAPObpSf5adRMsY+4DJEavD51Vz7/q+rvugiSXJXlrktuz3IOD/sc2d4LDUz0Bq+tDZ9Xzr7p+J0eTvDnJdzL/fX84yUXbbZ/DUD0Bq+tDZ9Xzr7p+Ry/PMiFg5x8W5DsAAOySW5O8bYG/85cW+BurJgAAsGvek+STM//Gi5doZM0EAAB2zckkN8z8G89copE1EwAA2EU3zXz9MxbpYsUEAAB20Rdmvn7nA0CHu8zN/SatOwHCuKrnX3X97rz/+7ACAAANCQAA0JAAAAANCQAA0JAAAAANCQAA0JAAAAANCQAAbMuJJL+S5I4k953e7kjyziSXF/bFjqp+HGd1feisev5V11+L40muz3SP/r329eEk1yY5tmBd739z1QOguj50Vj3/quuvwfFMj+g9233+YJYLAd7/5qoHQHV96Kx6/lXXX4P35OD7/e6Fanv/m6seANX1obPq+Vddv9qJ7L/sv9f2cJLLFqjf/f3fly8BAnBYrsm5nWeOJrl64V54AgEAgMNy5YzXXrVYF5yRAADAYXnujNc+b7EuOCMBAIDDMuc6+s5fg68mAABwWL4447V3L9YFZyQAAHBYbp7x2psW64K2qn8GUl0fOquef9X1q12e6Sd95/IzwEsXqN/9/d+XFQAADssdSd57Dq+7LsknF+6FhqoTYHV96Kx6/lXXX4NjSW7J2e/zzUmetFBt739z1QOguj50Vj3/quuvxbFMt/fd73LAw5meFLjUyT/71Or2/p/RkeoGtmDuf8S571F1feisev5V11+byzLd4e+qJJec/nd3ZfrC3w1Zftnf+7+Pnd6506oHQHV96Kx6/lXX7877vw9fAgSAhgQAAGhIAACAhgQAAGhIAACAhgQAAGhIAACAhgQAAHbRxTNff/8iXayYAADALnrezNffs0gXKyYAALCLfmLm67+0SBcrJgAAsGuOJnnDzL/x5SUaWTMBAIBd8+Ykl878Gx9bohFqVT8Osro+dFY9/6rrd3Rlkgcz/72fewmBFaiegNX1obPq+Vddv5OjSd6aZU7+DyW5aLvtb9/51Q0AwDm6KMklmT6tvyHzl/0f9ZEk31zob62WAACwt+pP4dX1u/rV6ga24Uh1A1swdwLNfY+q60NnTqAc1L1JnpPkgepGDptfAQDAY25Ig5N/0uPTZfUn8Or60JkVAA7i3iQvOP2/O88KAABM/kGanPyTHp8uqz+BV9eHzqwAcLY+muRHkjxS3ci2WAEAoLt7k/xsGp38EwEAgN4eSvJXk3y+upFtEwCAXbbzN3NhlkeSvDHJh4r7KCEAALvsi9UNsFrfSfLaJP+6uI8yAgCwy26uboBV+lqSVyb5jepGKgkAwC57X5KT1U2wKh9K8pIk/724j3ICALDL7kjy3uomWIWvJ/n5JC9P8rniXtiS6sdxVteH7o4luSXz56JtzO1LSf5xkmeGduYOntHrA1MIeHeSh1N/QrJtb3tjkieHM+pwl7m5J1F3AoTdcVmSq5Nclek58heWdsNhc/zcR4c3p/oEXF0fYFSOn4fIlwABoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAAAaEgAAoCEBAIA1Oj7z9d9ZpIsdJgAAsEYXz3z9NxbpYocJAACs0VNnvv6bi3SxwwQAANbo+TNfbwVgAwEAgDV6wczX/79FuthhAgAAa/TDM19/5yJd7DABAIC1OZLkx2f+DQFgAwEAgLX54STfO/NvCAAbCAAArM3fmvn6R5J8fIlGGNupmdvo9QFGclGSr2TecfO3tt71gKwAALAmv5D59wD44BKNML7qT+DV9QFGcXGmn+/NPW6+atuNs07VJ+Dq+gCjeGfmHzO/kvnPEWBHVJ+Aq+sDjOAlSR7K/GPme7bdOOtVfQKurg+wdn8yyecz/3h5KvNvIMQOqT4BV9cHWLPzk/zXLHPy/3SmmwhBkumZ0HMG1EUz6wsAAGd2JMm/zDIn/1NJ3rDd9lm7ezJvQF06s74AAPDdzs+yJ/+7kjxpmzvA+n028wbVW2fWFwAA/rg/keWW/R/d/vZW94Ah3Jh5g+r2JEdn1BcAAB7zkiz3hb9Htzvjp3+cwTsyf3C9eUZ9AQBgusnPO7LMT/2euF21xf1gID+d+YPrO0lecY71BQCgswuT/L0kf5jlT/ynkvz69naF0Twz05OhlggBfycHvxwgAADdnJfkRzLdlGfug332276c5Nlb2icG9ZEsN+DuSPJ3k1yes/uJoAAA7KrjSb43yQuTvCbJ25L8ZqYT82Gd9B/dHjldk3PU5YYJb05ybXUTACzmnyb5h9VNjKxLAHhaki9kuhYFwNhuS/LKTF8o5BzN+XnbSL6daZnKPaIBxnZ7psf9fqu6kdF1WQFIkj+V5DOxCgAwqt9N8qNJ/qC6kV3QZQUgSe5L8mCSn6huBIAD+91Mv/e/u7qRXdFpBSCZ7j39kSQ/WN0IAGft/yZ5dXzyX9R51Q1s2cOZbgz0jepGADgrtyX5y3HyX1y3AJBM96D+m5nCAADrdCrJL2e6bPv14l52UqfvADzeZ5L8fpK/kn6XQQDW7p4kfz3TnQQfKe5lZ3UNAEny20l+L9OdpDquhACs0W8k+akkH6tuZNf59DutArw/0/OpAajxmUzPW7m5upEuBIDJD2R6opRfBwBs1xcyXeu/IdND19gSS9+Tzyd5aaYHWXyzuBeADu5McnWS5ye5Pk7+W2cF4Ls9K1MQeFPcNRBgSV/NtNr6/iT/O554WkoA2NtTk7w2008GXxrvFcBBPZLpC9e3nt5ui0/6q+GkdnaekeTHMwWBF2b6zsDTk1yU6XnYAB09mOmy6ddPb19K8ulMy/ufyXTy/0pZdwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB/T/AfNPwjLkSyLrAAAAAElFTkSuQmCC">
+<link rel="manifest" href="data:application/json;base64,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">
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ڈائری — محمد شفاء الرحمن اشرف</title>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#1a5c2a">
+<link rel="icon" type="image/png" sizes="192x192" href="icon-192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@400;600;700&family=Noto+Naskh+Arabic:wght@400;500;700&family=Gulzar&family=Lateef:wght@400;700&family=Scheherazade+New:wght@400;700&family=Mirza&family=Aref+Ruqaa:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  @font-face {
+    font-family: 'Thuluth Bold';
+    src: url('fonts/ThuluthBold.ttf') format('truetype');
+    font-weight: 700;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jameel Noori Nastaleeq';
+    src: url('fonts/JameelNooriNastaleeq.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+  }
+  @font-face {
+    font-family: 'Jameel Noori Nastaleeq Kasheeda';
+    src: url('fonts/JameelNooriNastaleeqKasheeda.ttf') format('truetype');
+    font-weight: 400;
+    font-display: swap;
+  }
+
+  :root {
+    --green: #1a5c2a;
+    --green-mid: #2d7a3a;
+    --green-light: #3a9148;
+    --green-pale: #e8f5e9;
+    --gold: #c9a84c;
+    --gold-light: #e8c97a;
+    --gold-dark: #9c7a1e;
+    --white: #fffef8;
+    --text: #1a1a1a;
+    --shadow: rgba(0,0,0,0.18);
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', serif;
+    background: linear-gradient(135deg, #0e3d1a 0%, #1a5c2a 40%, #0e3d1a 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    direction: rtl;
+    overflow: hidden;
+  }
+
+  /* ===== LOCK SCREEN ===== */
+  #lockScreen {
+    position: fixed; inset: 0;
+    background: linear-gradient(135deg, #0a2e12 0%, #1a5c2a 50%, #0a2e12 100%);
+    display: flex; flex-direction: column;
+    align-items: center; justify-content: center;
+    z-index: 9999;
+    gap: 20px;
+  }
+
+  .lock-title {
+    color: var(--gold);
+    font-size: 2rem;
+    font-weight: 700;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.5);
+    text-align: center;
+    font-family: 'Thuluth Bold', 'Aref Ruqaa', serif;
+    line-height: 1.6;
+  }
+
+  .lock-sub {
+    color: #acd5b0;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .lock-icon {
+    font-size: 3.5rem;
+    filter: drop-shadow(0 0 12px var(--gold));
+    animation: pulse 2s infinite;
+  }
+
+  @keyframes pulse {
+    0%,100% { transform: scale(1); }
+    50% { transform: scale(1.08); }
+  }
+
+  .lock-input-wrap {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background: rgba(255,255,255,0.08);
+    border: 2px solid var(--gold);
+    border-radius: 30px;
+    padding: 8px 16px;
+    width: 280px;
+  }
+
+  .lock-input-wrap input {
+    flex: 1;
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.1rem;
+    font-family: inherit;
+    text-align: center;
+    direction: rtl;
+  }
+
+  .lock-input-wrap input::placeholder { color: rgba(255,255,255,0.4); }
+
+  .lock-btn {
+    background: linear-gradient(180deg, #e8c97a 0%, var(--gold-dark) 100%);
+    color: #1a1a1a;
+    border: 1px solid var(--gold-dark);
+    border-bottom: 4px solid #5a3e08;
+    border-radius: 25px;
+    padding: 10px 28px;
+    font-size: 1rem;
+    font-family: inherit;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.15s;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3), inset 0 1px 0 rgba(255,255,255,0.4);
+    position: relative;
+    top: 0;
+  }
+  .lock-btn:hover { 
+    top: 2px;
+    border-bottom-width: 2px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  }
+  .lock-btn:active {
+    top: 4px;
+    border-bottom-width: 1px;
+  }
+
+  .lock-err {
+    color: #ff6b6b;
+    font-size: 0.9rem;
+    min-height: 20px;
+    text-align: center;
+  }
+
+  .lock-set-link {
+    color: var(--gold-light);
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-decoration: underline;
+    margin-top: 4px;
+  }
+
+  /* ===== MAIN DIARY ===== */
+  .diary-wrapper {
+    width: 100%;
+    max-width: 820px;
+    background: linear-gradient(160deg, #f0faf2 0%, var(--white) 60%, #fdf8e8 100%);
+    border-radius: 18px;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 3px var(--gold), inset 0 0 40px rgba(26,92,42,0.04);
+    position: relative;
+    overflow: hidden;
+    height: 100vh;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* Category tabs on side (like diary page tabs) */
+  .cat-tabs {
+    position: absolute;
+    left: 0;
+    top: 145px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    z-index: 10;
+  }
+
+  .cat-tab {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    padding: 8px 5px;
+    font-size: 0.7rem;
+    color: #fff;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+    transition: all 0.2s;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    font-family: inherit;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  }
+
+  .cat-tab:hover { transform: translateX(3px); }
+  .cat-tab.active { transform: translateX(6px); font-weight: 700; }
+
+  /* ===== HEADER ===== */
+  .diary-header {
+    background: linear-gradient(135deg, var(--green) 0%, var(--green-mid) 50%, var(--green) 100%);
+    padding: 6px 8px 6px 8px;
+    position: relative;
+    border-bottom: 4px solid var(--gold);
+    overflow: hidden;
+    flex-shrink: 0;
+  }
+
+  .diary-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.04'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  }
+
+  .owner-name {
+    font-size: 2.3rem;
+    font-weight: 700;
+    color: var(--gold);
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.4), 0 0 20px rgba(201,168,76,0.3);
+    letter-spacing: 1px;
+    position: relative;
+    font-family: 'Thuluth Bold', 'Aref Ruqaa', serif;
+    line-height: 1.6;
+  }
+
+  .diary-tagline {
+    text-align: center;
+    color: #c8e6c9;
+    font-size: 1rem;
+    margin-top: 6px;
+    position: relative;
+    font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', serif;
+    font-style: italic;
+  }
+
+  .header-ornament {
+    text-align: center;
+    color: var(--gold);
+    font-size: 1.6rem;
+    margin-top: 4px;
+    position: relative;
+    opacity: 1;
+  }
+
+  /* 3D Box for owner name */
+  .owner-name-box {
+    background: linear-gradient(135deg, #1a0a00 0%, #4a1500 40%, #2a0800 100%);
+    border: 2.5px solid var(--gold);
+    border-radius: 12px;
+    padding: 6px 10px 4px;
+    margin: 0 0 5px 0;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.5), inset 0 1px 0 rgba(255,215,100,0.15), 0 0 20px rgba(201,168,76,0.2);
+  }
+
+  /* 3D Box for tagline */
+  .diary-tagline-box {
+    background: linear-gradient(135deg, #0a1a3a 0%, #1a2e6a 50%, #0a1a3a 100%);
+    border: 2px solid #6a9fd8;
+    border-radius: 10px;
+    padding: 5px 10px 3px;
+    margin: 0 0 5px 0;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0,0,50,0.5), inset 0 1px 0 rgba(100,180,255,0.15);
+  }
+
+  /* 3D Box for bismillah */
+  .bismillah-box {
+    background: linear-gradient(135deg, #001a10 0%, #003820 50%, #001a10 100%);
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    padding: 4px 10px 2px;
+    margin: 0;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 3px 12px rgba(0,60,20,0.5), inset 0 1px 0 rgba(100,255,150,0.1);
+  }
+
+  /* 3D button feel for all buttons */
+  .tool-btn {
+    background: linear-gradient(180deg, #e8f5e9 0%, #c8e6c9 100%);
+    border: 1.5px solid var(--green-light);
+    border-bottom: 3px solid var(--green);
+    border-radius: 8px;
+    padding: 4px 8px;
+    font-size: 0.74rem;
+    font-family: inherit;
+    color: var(--green);
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-weight: 600;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.7);
+    text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+    position: relative;
+    top: 0;
+  }
+  .tool-btn:hover {
+    background: linear-gradient(180deg, #2d7a3a 0%, #1a5c2a 100%);
+    color: #fff;
+    border-bottom-color: #0a3015;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.15);
+    transform: none;
+    top: 1px;
+    text-shadow: 0 1px 2px rgba(0,0,0,0.3);
+  }
+  .tool-btn:active {
+    top: 3px;
+    box-shadow: 0 0 2px rgba(0,0,0,0.2);
+    border-bottom-width: 1px;
+  }
+
+  /* ===== SEARCH BAR ===== */
+  .search-section {
+    padding: 5px 12px;
+    background: linear-gradient(90deg, #e8f5e9, #fffef8, #fdf8e8);
+    border-bottom: 2px solid var(--gold-light);
+    position: relative;
+    flex-shrink: 0;
+  }
+
+  .search-wrap {
+    position: relative;
+  }
+
+  .search-input {
+    width: 100%;
+    padding: 10px 40px 10px 14px;
+    border: 2px solid var(--green-light);
+    border-radius: 25px;
+    font-family: inherit;
+    font-size: 0.95rem;
+    outline: none;
+    background: #fff;
+    color: var(--text);
+    direction: rtl;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .search-input:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 3px rgba(26,92,42,0.12);
+  }
+
+  .search-icon {
+    position: absolute;
+    left: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--green-mid);
+    font-size: 1.1rem;
+    pointer-events: none;
+  }
+
+  .search-suggestions {
+    position: absolute;
+    top: 100%;
+    right: 0; left: 0;
+    background: #fff;
+    border: 2px solid var(--green-light);
+    border-top: none;
+    border-radius: 0 0 14px 14px;
+    z-index: 50;
+    max-height: 180px;
+    overflow-y: auto;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    display: none;
+  }
+
+  .search-suggestions.show { display: block; }
+
+  .suggestion-item {
+    padding: 9px 16px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #f0f0f0;
+    transition: background 0.15s;
+    text-align: right;
+  }
+
+  .suggestion-item:hover { background: var(--green-pale); color: var(--green); }
+
+  /* ===== CATEGORY FILTER BAR ===== */
+  .cat-filter-bar {
+    display: flex;
+    gap: 5px;
+    padding: 4px 10px;
+    overflow-x: auto;
+    overflow-y: hidden;
+    background: rgba(255,255,255,0.7);
+    border-bottom: 1px solid var(--gold-light);
+    scrollbar-width: none;
+    flex-shrink: 0;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    flex-wrap: nowrap;
+  }
+  .cat-filter-bar::-webkit-scrollbar { display: none; }
+
+  .cat-filter-bar::-webkit-scrollbar { display: none; }
+
+  .cat-pill {
+    border: none;
+    border-radius: 20px;
+    padding: 3px 10px;
+    font-size: 0.75rem;
+    font-family: inherit;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+    font-weight: 600;
+    color: #fff;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    border-bottom: 2px solid rgba(0,0,0,0.25);
+  }
+
+  .cat-pill:hover { transform: translateY(-1px); box-shadow: 0 4px 10px rgba(0,0,0,0.2); }
+  .cat-pill.active { transform: scale(1.05); box-shadow: 0 4px 12px rgba(0,0,0,0.3); }
+
+  /* ===== TOOLBAR ===== */
+  .toolbar {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 3px 12px;
+    background: #fff;
+    border-bottom: 2px solid var(--green-pale);
+    flex-shrink: 0;
+  }
+
+  .font-select-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .font-select-label {
+    font-size: 0.8rem;
+    color: var(--green);
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .toolbar-btn-row {
+    display: flex;
+    gap: 6px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .tool-btn {
+    background: linear-gradient(135deg, var(--green-pale), #d4edda);
+    border: 1.5px solid var(--green-light);
+    border-radius: 8px;
+    padding: 6px 12px;
+    font-size: 0.82rem;
+    font-family: inherit;
+    color: var(--green);
+    cursor: pointer;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 600;
+  }
+
+  .tool-btn:hover {
+    background: var(--green);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 10px rgba(26,92,42,0.25);
+  }
+
+  .tool-btn.gold {
+    background: linear-gradient(180deg, #fdf3d0 0%, #e8c45a 100%);
+    border-color: var(--gold);
+    border-bottom-color: #9c7a1e;
+    color: var(--gold-dark);
+    box-shadow: 0 3px 6px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.7);
+  }
+  .tool-btn.gold:hover {
+    background: linear-gradient(180deg, var(--gold) 0%, var(--gold-dark) 100%);
+    color: #1a1a1a;
+    top: 1px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+  .tool-btn.danger {
+    background: linear-gradient(180deg, #fff0f0 0%, #ffcdd2 100%);
+    border-color: #e57373;
+    border-bottom-color: #c62828;
+    color: #c62828;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12), inset 0 1px 0 rgba(255,255,255,0.7);
+  }
+  .tool-btn.danger:hover { 
+    background: linear-gradient(180deg, #c62828 0%, #8b0000 100%);
+    color: #fff;
+    top: 1px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  }
+
+  /* ===== ENTRIES AREA ===== */
+  .entries-area {
+    flex: 1 1 0;
+    padding: 8px 48px 150px 12px;
+    overflow-y: auto;
+    min-height: 0;
+    max-height: none;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gold) transparent;
+  }
+
+  .entries-area::-webkit-scrollbar { width: 6px; }
+  .entries-area::-webkit-scrollbar-track { background: transparent; }
+  .entries-area::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
+
+  .no-entries {
+    text-align: center;
+    color: #aaa;
+    padding: 40px 20px;
+    font-size: 1rem;
+    line-height: 2;
+  }
+
+  /* ===== ENTRY CARD ===== */
+  .entry-card {
+    background: linear-gradient(135deg, #fff 0%, #fffef5 100%);
+    border-radius: 12px;
+    border: 1.5px solid var(--gold-light);
+    margin-bottom: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    transition: box-shadow 0.2s;
+    position: relative;
+  }
+
+  .entry-card:hover { box-shadow: 0 6px 20px rgba(0,0,0,0.12); }
+
+  .entry-card.selected {
+    border-color: var(--green);
+    box-shadow: 0 0 0 2px var(--green), 0 4px 12px rgba(26,92,42,0.15);
+  }
+
+  .entry-card-top {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px 6px;
+    background: linear-gradient(90deg, var(--green-pale), #fff);
+    border-bottom: 1px solid #e8f5e9;
+  }
+
+  .entry-select-cb {
+    width: 18px; height: 18px;
+    accent-color: var(--green);
+    cursor: pointer;
+    flex-shrink: 0;
+  }
+
+  .entry-cat-badge {
+    border-radius: 12px;
+    padding: 2px 10px;
+    font-size: 0.72rem;
+    color: #fff;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .entry-title-display {
+    flex: 1;
+    font-weight: 700;
+    color: var(--green);
+    font-size: 0.9rem;
+  }
+
+  .entry-date {
+    font-size: 0.72rem;
+    color: #888;
+    flex-shrink: 0;
+  }
+
+  .entry-actions {
+    display: flex;
+    gap: 4px;
+    flex-shrink: 0;
+  }
+
+  .icon-btn {
+    background: none;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    width: 28px; height: 28px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+    color: #666;
+  }
+
+  .icon-btn:hover { background: var(--green); color: #fff; border-color: var(--green); }
+  .icon-btn.del:hover { background: #c62828; border-color: #c62828; }
+
+  .entry-body {
+    padding: 12px 16px;
+    font-size: 1.05rem;
+    line-height: 2.15;
+    color: #333;
+    white-space: pre-wrap;
+    word-break: break-word;
+    transition: font-size 0.2s ease;
+  }
+
+  /* Font size control bar */
+  .font-size-bar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    padding: 4px 10px 2px;
+    background: linear-gradient(90deg, #f0faf2, #fffef8);
+    border-bottom: 1px solid var(--gold-light);
+    flex-shrink: 0;
+    direction: ltr;
+  }
+
+  .font-size-label {
+    font-family: 'Jameel Noori Nastaleeq', serif;
+    font-size: 0.72rem;
+    color: var(--green);
+    direction: rtl;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+
+  .fs-btn {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--green-light);
+    border-bottom: 3px solid var(--green);
+    background: linear-gradient(180deg, #e8f5e9, #c8e6c9);
+    color: var(--green);
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15), inset 0 1px 0 rgba(255,255,255,0.7);
+    transition: all 0.15s;
+    position: relative;
+    top: 0;
+    flex-shrink: 0;
+    line-height: 1;
+  }
+
+  .fs-btn:active {
+    top: 2px;
+    border-bottom-width: 1px;
+    box-shadow: 0 0 3px rgba(0,0,0,0.1);
+  }
+
+  .fs-display {
+    min-width: 36px;
+    text-align: center;
+    font-size: 0.78rem;
+    color: var(--green);
+    font-weight: 700;
+    background: var(--green-pale);
+    border: 1px solid var(--green-light);
+    border-radius: 8px;
+    padding: 2px 6px;
+    font-family: monospace;
+  }
+
+  /* ===== SELECTABLE URDU/ARABIC FONT CLASSES ===== */
+  .font-nastaliq { font-family: 'Noto Nastaliq Urdu', serif; }
+  .font-jameel { font-family: 'Jameel Noori Nastaleeq', serif; }
+  .font-jameel-kasheeda { font-family: 'Jameel Noori Nastaleeq Kasheeda', serif; }
+  .font-naskh { font-family: 'Noto Naskh Arabic', serif; }
+  .font-thuluth { font-family: 'Thuluth Bold', serif; }
+  .font-gulzar { font-family: 'Gulzar', serif; }
+  .font-lateef { font-family: 'Lateef', serif; }
+  .font-scheherazade { font-family: 'Scheherazade New', serif; }
+  .font-mirza { font-family: 'Mirza', cursive, serif; }
+  .font-aref { font-family: 'Aref Ruqaa', serif; }
+
+  .entry-attachments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 6px 14px 10px;
+  }
+
+  .attach-thumb {
+    width: 50px; height: 50px;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 2px solid var(--gold-light);
+    cursor: pointer;
+  }
+
+  .file-tag {
+    background: var(--green-pale);
+    border: 1px solid var(--green-light);
+    border-radius: 14px;
+    padding: 3px 10px;
+    font-size: 0.72rem;
+    color: var(--green);
+    cursor: pointer;
+  }
+
+  /* ===== COMPOSE AREA ===== */
+  .compose-area {
+    border-top: 3px solid var(--gold);
+    background: linear-gradient(135deg, #e8f5e9 0%, #fffef8 100%);
+    padding: 6px 12px 6px;
+    flex-shrink: 0;
+    overflow: visible;
+  }
+
+  .compose-row1 {
+    display: flex;
+    gap: 6px;
+    margin-bottom: 5px;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+
+  .compose-input {
+    flex: 1;
+    min-width: 150px;
+    padding: 8px 14px;
+    border: 2px solid var(--green-light);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    outline: none;
+    background: #fff;
+    direction: rtl;
+    transition: border-color 0.2s;
+  }
+
+  .compose-input:focus { border-color: var(--green); }
+
+  .cat-select {
+    padding: 8px 14px;
+    border: 2px solid var(--gold);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 0.85rem;
+    outline: none;
+    background: #fff;
+    color: var(--gold-dark);
+    cursor: pointer;
+    direction: rtl;
+  }
+
+  .font-select {
+    padding: 6px 28px 6px 12px;
+    border: 1.5px solid var(--green-light);
+    border-radius: 8px;
+    font-family: 'Jameel Noori Nastaleeq', serif;
+    font-size: 0.85rem;
+    outline: none;
+    background: linear-gradient(135deg, #fffef8, #f0faf2);
+    color: var(--green);
+    cursor: pointer;
+    direction: rtl;
+    font-weight: 600;
+    flex: 1 1 100%;
+  }
+
+  .compose-textarea {
+    width: 100%;
+    padding: 15px 12px;
+    border: 2px solid var(--green-light);
+    border-radius: 12px;
+    font-family: inherit;
+    font-size: 1rem;
+    line-height: 2;
+    resize: none;
+    height: 140px;
+    outline: none;
+    background: #fff;
+    direction: rtl;
+    transition: border-color 0.2s, box-shadow 0.2s;
+  }
+
+  .compose-textarea:focus { border-color: var(--green); box-shadow: 0 0 0 4px rgba(26,92,42,0.12); }
+
+  .compose-actions {
+    display: flex;
+    gap: 6px;
+    margin-top: 5px;
+    flex-wrap: nowrap;
+    align-items: center;
+    overflow-x: auto;
+  }
+
+  .attach-btn {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 14px;
+    border-radius: 20px;
+    font-size: 0.82rem;
+    font-family: inherit;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    font-weight: 600;
+  }
+
+  .attach-btn.file-btn {
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    color: #e65100;
+    border: 1.5px solid #ffb74d;
+    box-shadow: 0 2px 6px rgba(230,81,0,0.15);
+  }
+
+  .attach-btn.file-btn:hover {
+    background: #e65100;
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(230,81,0,0.3);
+  }
+
+  .attach-btn.img-btn {
+    background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+    color: var(--green);
+    border: 1.5px solid var(--green-light);
+    box-shadow: 0 2px 6px rgba(26,92,42,0.15);
+  }
+
+  .attach-btn.img-btn:hover {
+    background: var(--green);
+    color: #fff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(26,92,42,0.3);
+  }
+
+  .save-btn {
+    margin-right: auto;
+    background: linear-gradient(180deg, #e8c97a 0%, var(--gold-dark) 100%);
+    color: #1a1a1a;
+    border: 1px solid var(--gold-dark);
+    border-bottom: 4px solid #7a5a10;
+    border-radius: 22px;
+    padding: 8px 24px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25), inset 0 1px 0 rgba(255,255,255,0.5);
+    transition: all 0.15s;
+    position: relative;
+    top: 0;
+  }
+  .save-btn:hover { 
+    background: linear-gradient(180deg, var(--gold) 0%, #8a6010 100%);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    top: 2px;
+    border-bottom-width: 2px;
+  }
+  .save-btn:active {
+    top: 4px;
+    border-bottom-width: 1px;
+    box-shadow: 0 0 4px rgba(0,0,0,0.15);
+  }
+
+  .preview-attach {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 6px;
+  }
+
+  .preview-thumb {
+    width: 44px; height: 44px;
+    border-radius: 6px;
+    object-fit: cover;
+    border: 2px solid var(--gold);
+  }
+
+  .preview-file {
+    background: var(--green-pale);
+    border: 1px solid var(--green-light);
+    border-radius: 14px;
+    padding: 4px 10px;
+    font-size: 0.75rem;
+    color: var(--green);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .preview-file span.rm {
+    cursor: pointer;
+    color: #c62828;
+    font-weight: 700;
+  }
+
+  /* ===== MODALS ===== */
+  .modal-overlay {
+    position: fixed; inset: 0;
+    background: rgba(0,0,0,0.6);
+    display: flex; align-items: center; justify-content: center;
+    z-index: 1000;
+    display: none;
+  }
+
+  .modal-overlay.show { display: flex; }
+
+  /* Compose modal: full-screen on all sizes */
+  #composeModal {
+    align-items: stretch;
+    justify-content: stretch;
+    padding: 0;
+  }
+  #composeModal .modal {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+  }
+  #composeModal .compose-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  #composeModal .compose-textarea {
+    flex: 1;
+    min-height: 240px;
+    padding: 15px 12px;
+    font-size: 1rem;
+  }
+
+  .modal {
+    background: linear-gradient(135deg, #fff, #fffef8);
+    border-radius: 16px;
+    border: 2px solid var(--gold);
+    padding: 24px;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.4);
+    direction: rtl;
+  }
+
+  .modal h3 {
+    color: var(--green);
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+    text-align: center;
+    border-bottom: 2px solid var(--gold-light);
+    padding-bottom: 10px;
+  }
+
+  .modal input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 2px solid var(--green-light);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    margin-bottom: 10px;
+    direction: rtl;
+  }
+
+  .modal-btns {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    margin-top: 14px;
+  }
+
+  .modal-btns button {
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 0.9rem;
+    cursor: pointer;
+    font-weight: 700;
+    transition: all 0.2s;
+  }
+
+  .btn-ok { background: linear-gradient(135deg, var(--gold), var(--gold-dark)); color: #1a1a1a; }
+  .btn-ok:hover { transform: translateY(-1px); }
+  .btn-cancel { background: #f0f0f0; color: #555; }
+  .btn-cancel:hover { background: #ddd; }
+
+  /* ===== SHARE BAR ===== */
+  .share-bar {
+    display: none;
+    padding: 8px 16px;
+    background: linear-gradient(90deg, #e8f5e9, #fffef8);
+    border-top: 2px solid var(--green-light);
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .share-bar.show { display: flex; }
+
+  .share-count {
+    color: var(--green);
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+
+  .share-via-btn {
+    padding: 6px 14px;
+    border: none;
+    border-radius: 16px;
+    font-family: inherit;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 600;
+  }
+
+  .share-via-btn:hover { transform: translateY(-1px); box-shadow: 0 3px 8px rgba(0,0,0,0.15); }
+
+  /* ===== FOOTER ===== */
+  .diary-footer {
+    background: linear-gradient(90deg, var(--green), var(--green-mid), var(--green));
+    padding: 5px 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 3px solid var(--gold);
+    gap: 6px;
+    flex-wrap: nowrap;
+    flex-shrink: 0;
+  }
+
+  .footer-txt {
+    color: var(--gold-light);
+    font-size: 0.75rem;
+  }
+
+  .footer-icon-btns {
+    display: flex;
+    gap: 6px;
+  }
+
+  .footer-icon-btn {
+    background: linear-gradient(180deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.05) 100%);
+    border: 1px solid var(--gold-light);
+    border-bottom: 3px solid rgba(0,0,0,0.3);
+    border-radius: 8px;
+    padding: 5px 10px;
+    color: var(--gold);
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-family: inherit;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.15);
+    position: relative;
+    top: 0;
+  }
+  .footer-icon-btn:hover { 
+    background: linear-gradient(180deg, var(--gold) 0%, var(--gold-dark) 100%);
+    color: #1a1a1a;
+    top: 1px;
+    border-bottom-width: 2px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+  }
+  .footer-icon-btn:active {
+    top: 3px;
+    border-bottom-width: 1px;
+  }
+
+  /* Toast */
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    right: 50%;
+    transform: translateX(50%);
+    background: var(--green);
+    color: #fff;
+    padding: 10px 24px;
+    border-radius: 24px;
+    font-size: 0.9rem;
+    font-family: inherit;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+    border: 2px solid var(--gold);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 9999;
+    text-align: center;
+  }
+
+  /* ===== FULLSCREEN READER ===== */
+  #fullscreenReader {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 9990;
+    background: linear-gradient(160deg, #f8fdf8 0%, #fffef5 60%, #fdf8e8 100%);
+    flex-direction: column;
+    overflow: hidden;
+  }
+  #fullscreenReader.open { display: flex; }
+
+  .fs-reader-header {
+    background: linear-gradient(135deg, var(--green) 0%, var(--green-mid) 100%);
+    border-bottom: 3px solid var(--gold);
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+    gap: 8px;
+  }
+
+  .fs-reader-title {
+    color: var(--gold-light);
+    font-size: 0.9rem;
+    font-family: 'Jameel Noori Nastaleeq', serif;
+    flex: 1;
+    text-align: right;
+    direction: rtl;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .fs-reader-controls {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-shrink: 0;
+    direction: ltr;
+  }
+
+  .fs-size-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid rgba(201,168,76,0.6);
+    border-bottom: 3px solid rgba(201,168,76,0.9);
+    background: linear-gradient(180deg, rgba(255,255,255,0.2), rgba(255,255,255,0.05));
+    color: var(--gold-light);
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: all 0.15s;
+    position: relative;
+    top: 0;
+  }
+  .fs-size-btn:active { top: 2px; border-bottom-width: 1px; }
+
+  .fs-size-display {
+    min-width: 40px;
+    text-align: center;
+    font-size: 0.75rem;
+    color: var(--gold);
+    font-weight: 700;
+    background: rgba(0,0,0,0.25);
+    border: 1px solid rgba(201,168,76,0.3);
+    border-radius: 8px;
+    padding: 3px 6px;
+    font-family: monospace;
+  }
+
+  .fs-close-btn {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    border: 2px solid rgba(255,100,100,0.5);
+    border-bottom: 3px solid rgba(200,50,50,0.8);
+    background: linear-gradient(180deg, rgba(255,80,80,0.25), rgba(180,30,30,0.2));
+    color: #ffaaaa;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    transition: all 0.15s;
+    position: relative;
+    top: 0;
+    flex-shrink: 0;
+  }
+  .fs-close-btn:active { top: 2px; border-bottom-width: 1px; }
+
+  .fs-reader-meta {
+    padding: 6px 16px 4px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    direction: rtl;
+    border-bottom: 1px solid var(--gold-light);
+    background: rgba(255,255,255,0.7);
+    flex-shrink: 0;
+  }
+
+  .fs-meta-cat {
+    border-radius: 12px;
+    padding: 2px 12px;
+    font-size: 0.75rem;
+    color: #fff;
+    font-weight: 700;
+  }
+
+  .fs-meta-date {
+    font-size: 0.72rem;
+    color: #888;
+    margin-right: auto;
+    direction: ltr;
+  }
+
+  .fs-reader-body {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px 20px;
+    direction: rtl;
+    font-family: 'Jameel Noori Nastaleeq', serif;
+    font-size: 1.3rem;
+    line-height: 2.4;
+    color: #1a1a1a;
+    white-space: pre-wrap;
+    word-break: break-word;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: thin;
+    scrollbar-color: var(--gold) transparent;
+  }
+
+  .toast.show { opacity: 1; }
+  #driveReminderOverlay.show { display:flex !important; }
+
+  /* Hidden file inputs */
+  #fileInput, #imgInput { display: none; }
+
+  @media (max-width: 500px) {
+    .owner-name { font-size: 1.7rem; }
+    .entries-area { padding-right: 16px; }
+    .cat-tabs { display: none; }
+    .font-select { font-size: 0.75rem; padding: 5px 8px; }
+    .toolbar { gap: 5px; }
+    .tool-btn { font-size: 0.75rem; padding: 5px 9px; }
+    body { padding: 0; }
+    .diary-wrapper {
+      max-width: 100%;
+      width: 100%;
+      height: 100vh;
+      height: 100dvh;
+      max-height: 100vh;
+      max-height: 100dvh;
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
+.attach-thumb { width: 60px; height: 60px; object-fit: cover; border-radius: 8px; cursor: pointer; border: 2px solid var(--gold); transition: transform 0.2s; margin: 2px; } .attach-thumb:hover { transform: scale(1.05); box-shadow: 0 2px 8px rgba(0,0,0,0.2); }
+
+  body { font-weight: 500; }
+  .tool-btn, .footer-icon-btn, .cat-pill, .fs-btn, .share-via-btn { font-weight: 600 !important; }
+  .compose-input, .cat-select, .compose-textarea { font-weight: 500; border-width: 2px !important; }
+  .entry-title-display { font-weight: 700; }
+  .entry-date { font-weight: 600; }
+
+
+  /* Floating Action Button */
+  .fab {
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #1a5c2a, #3a9148);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    box-shadow: 0 6px 20px rgba(0,0,0,0.35);
+    cursor: pointer;
+    z-index: 999;
+    border: 3px solid var(--gold);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .fab:hover { 
+    transform: scale(1.12); 
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  }
+  
+  /* Compose Modal Adjustments */
+  #composeModal .modal {
+    width: 95%;
+    max-width: 600px;
+    max-height: 90vh;
+    overflow-y: auto;
+    padding: 15px;
+  }
+  .compose-textarea {
+    height: 200px !important;
+  }
+
+
+  /* Interface Font Clarity */
+  body { font-weight: 500; }
+  .tool-btn, .footer-icon-btn, .cat-pill, .fs-btn, .share-via-btn, .fab { font-weight: 700 !important; }
+  .compose-input, .cat-select, .compose-textarea { font-weight: 500; border: 2px solid #3a9148 !important; border-radius: 10px !important; }
+  .entry-title-display { font-weight: 700; color: #1a5c2a; }
+  .entry-date { font-weight: 600; color: #666; }
+
+  /* Bismillah Centering */
+  .bismillah-box { display: flex; align-items: center; justify-content: center; height: 60px; }
+  .header-ornament { font-size: 1.8rem !important; color: #a5ffb8; margin: 0; }
+
+  /* Floating Action Button */
+  .fab {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 65px;
+    height: 65px;
+    background: linear-gradient(135deg, #1a5c2a, #3a9148);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+    cursor: pointer;
+    z-index: 999;
+    border: 3px solid var(--gold);
+    transition: all 0.2s;
+  }
+  .fab:active { transform: scale(0.9); }
+
+  /* Image Thumbnails in Feed */
+  .attach-thumb { width: 65px; height: 65px; object-fit: cover; border-radius: 10px; border: 2px solid var(--gold); margin: 3px; cursor: pointer; transition: transform 0.2s; }
+  .attach-thumb:hover { transform: scale(1.05); }
+
+  /* Lightbox */
+  #imgLightbox { display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:10000; flex-direction:column; align-items:center; justify-content:center; }
+  
+  /* Modal Adjustments */
+  .modal-overlay { z-index: 10001; }
+  .modal { width: 95%; max-width: 600px; max-height: 90vh; overflow-y: auto; border: 3px solid var(--gold) !important; border-radius: 20px !important; }
+  #composeModal .modal { width: 100% !important; max-width: 100% !important; max-height: 100% !important; height: 100% !important; border-radius: 0 !important; }
+  .compose-textarea { height: 180px !important; font-size: 1.1rem !important; }
+  #composeModal .compose-textarea { height: auto !important; flex: 1 !important; min-height: 200px !important; }
+
+
+  .pwd-wrap { position: relative; width: 100%; max-width: 300px; margin: 0 auto; }
+  .eye-btn { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; z-index: 10; font-size: 1.2rem; }
+  .lock-input-wrap input { padding-right: 40px !important; }
+
+
+  .pwd-container { position: relative; width: 100%; max-width: 300px; margin: 10px auto; }
+  .pwd-container input { width: 100%; padding: 12px 45px 12px 12px; border-radius: 12px; border: 2px solid var(--gold); background: rgba(255,255,255,0.1); color: white; font-size: 1.1rem; box-sizing: border-box; outline: none; font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', serif; }
+  .eye-toggle { position: absolute; right: 12px; top: 50%; transform: translateY(-50%); cursor: pointer; font-size: 1.3rem; color: var(--gold); z-index: 10; padding: 5px; }
+  .login-btn { width: 100%; max-width: 300px; padding: 14px; background: linear-gradient(180deg, #e8c97a, #9c7a1e); border: none; border-radius: 12px; color: #1a1a1a; font-weight: bold; font-size: 1.2rem; cursor: pointer; margin-top: 15px; font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', serif; line-height: 2; }
+  .login-link-row { display: flex; justify-content: center; gap: 30px; margin-top: 20px; color: var(--gold); font-weight: bold; cursor: pointer; font-size: 1rem; font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', serif; line-height: 2; }
+  .modal-input { width: 100%; padding: 12px; border-radius: 10px; border: 2px solid #ddd; margin-bottom: 15px; font-size: 1rem; box-sizing: border-box; outline: none; font-family: 'Jameel Noori Nastaleeq', 'Noto Nastaliq Urdu', serif; }
+
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+</head>
+<body>
+
+<!-- SET PASSWORD MODAL -->
+<div class="modal-overlay" id="setPwdModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:20000; align-items:center; justify-content:center;">
+  <div class="modal" style="background:#fff; border-radius:20px; padding:25px; max-width:400px; width:90%; border:3px solid var(--gold); position:relative; font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu',serif;">
+    <h3 style="text-align:center; color:#1a5c2a; margin-top:0; font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu',serif; line-height:1.8;">🔐 پاسورڈ سیٹ کریں</h3>
+    <p style="font-size:0.9rem; color:#555; text-align:center; margin-bottom:20px; font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu',serif; line-height:1.8;">پاسورڈ اور موبائل نمبر درج کریں (ری سیٹ کے لیے ضروری ہے)۔</p>
+    <input type="password" id="newPwd" class="modal-input" placeholder="نیا پاسورڈ...">
+    <input type="tel" id="userMobile" class="modal-input" placeholder="موبائل نمبر (مثلاً 03001234567)...">
+    <button onclick="saveNewPwd()" style="width:100%; padding:15px; background:linear-gradient(135deg,#1a5c2a,#3a9148); color:white; border:none; border-radius:12px; font-weight:bold; cursor:pointer; font-size:1.1rem;">💾 محفوظ کریں</button>
+    <button onclick="closeModalDirect('setPwdModal')" style="width:100%; margin-top:10px; padding:10px; background:#eee; border:none; border-radius:10px; font-weight:bold; cursor:pointer;">بند کریں</button>
+  </div>
+</div>
+
+<!-- FORGOT PASSWORD MODAL -->
+<div class="modal-overlay" id="forgotPwdModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:20000; align-items:center; justify-content:center;">
+  <div class="modal" style="background:#fff; border-radius:20px; padding:25px; max-width:400px; width:90%; border:3px solid #d32f2f; position:relative; font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu',serif;">
+    <h3 style="text-align:center; color:#d32f2f; margin-top:0; font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu',serif; line-height:1.8;">❓ پاسورڈ ری سیٹ</h3>
+    <p style="font-size:0.9rem; color:#555; text-align:center; margin-bottom:20px; font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu',serif; line-height:1.8;">وہی موبائل نمبر درج کریں جو آپ نے سیٹ کرتے وقت دیا تھا۔</p>
+    <input type="tel" id="resetMobile" class="modal-input" placeholder="موبائل نمبر درج کریں...">
+    <button onclick="verifyMobile()" style="width:100%; padding:15px; background:#d32f2f; color:white; border:none; border-radius:12px; font-weight:bold; cursor:pointer; font-size:1.1rem;">🔄 تصدیق کریں</button>
+    <button onclick="closeModalDirect('forgotPwdModal')" style="width:100%; margin-top:10px; padding:10px; background:#eee; border:none; border-radius:10px; font-weight:bold; cursor:pointer;">بند کریں</button>
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- FORGOT PASSWORD MODAL -->
+
+
+<!-- SET PASSWORD MODAL -->
+
+
+
+
+<!-- CUSTOMIZE NAME & TYPE MODAL -->
+<div class="modal-overlay" id="customizeModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:20000; align-items:center; justify-content:center;">
+  <div class="modal" style="max-width:360px;">
+    <h3 style="text-align:center; margin-bottom:16px; color:var(--green); font-size:1.1rem;">📝 ڈائری کی معلومات</h3>
+    
+    <label style="display:block; font-size:0.9rem; color:#333; margin-bottom:5px; font-weight:600;">آپ کا نام:</label>
+    <input type="text" id="customizeName" class="modal-input" placeholder="مثلاً: محمد شفاء الرحمن" style="margin-bottom:14px;padding:12px 12px;">
+    
+    <label style="display:block; font-size:0.9rem; color:#333; margin-bottom:5px; font-weight:600;">ڈائری کی قسم:</label>
+    <input type="text" id="customizeType" class="modal-input" placeholder="مثلاً: ذاتی ڈائری، تجارتی نوٹ وغیرہ" style="margin-bottom:16px;padding:12px 12px;">
+    
+    <div style="display:flex; gap:10px; justify-content:center;">
+      <button onclick="saveCustomization()" style="background:linear-gradient(180deg,#1a5c2a,#0d3d1a); color:white; border:none; padding:12px 24px; border-radius:20px; cursor:pointer; font-weight:700; font-family:inherit; flex:1;">💾 محفوظ</button>
+      <button onclick="showFontSettings()" style="background:linear-gradient(180deg,#1565c0,#0d47a1); color:white; border:none; padding:12px 24px; border-radius:20px; cursor:pointer; font-weight:700; font-family:inherit; flex:1;">🔤 فونٹ</button>
+    </div>
+    <button onclick="closeModal('customizeModal')" style="background:#ddd; color:#333; border:none; padding:10px 20px; border-radius:20px; cursor:pointer; font-weight:700; font-family:inherit; width:100%; margin-top:8px;">✕ بند</button>
+  </div>
+</div>
+
+<!-- FONT STYLE MODAL -->
+<div class="modal-overlay" id="fontSettingsModal" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.8); z-index:20001; align-items:center; justify-content:center;">
+  <div class="modal" style="max-width:360px;">
+    <h3 style="text-align:center; margin-bottom:16px; color:var(--green); font-size:1.1rem;">🔤 فونٹ سٹائل</h3>
+    
+    <label style="display:block; font-size:0.9rem; color:#333; margin-bottom:8px; font-weight:600;">پوری ایپ کے لیے فونٹ منتخب کریں:</label>
+    
+    <div style="display:flex; flex-direction:column; gap:8px; margin-bottom:16px;">
+      <button onclick="setAppFont('font-jameel')" class="font-style-btn" id="btn-jameel" style="padding:14px; border:2px solid #1a5c2a; border-radius:10px; background:#f0f8f5; cursor:pointer; font-family:'Jameel Noori Nastaleeq',serif; font-size:1.1rem; color:#1a5c2a; font-weight:600; transition:all 0.2s;">جمیل نوری نستعلیق</button>
+      
+      <button onclick="setAppFont('font-jameel-kasheeda')" class="font-style-btn" id="btn-kasheeda" style="padding:14px; border:2px solid #1a5c2a; border-radius:10px; background:#f0f8f5; cursor:pointer; font-family:'Jameel Noori Nastaleeq',serif; font-size:1.1rem; color:#1a5c2a; font-weight:600; transition:all 0.2s; letter-spacing:3px;">جمیل کشیدہ</button>
+      
+      <button onclick="setAppFont('font-naskh')" class="font-style-btn" id="btn-naskh" style="padding:14px; border:2px solid #1a5c2a; border-radius:10px; background:#f0f8f5; cursor:pointer; font-family:'Noto Naskh Arabic',serif; font-size:1.1rem; color:#1a5c2a; font-weight:600; transition:all 0.2s;">نسخ (Naskh)</button>
+    </div>
+    
+    <div style="display:flex; gap:10px; justify-content:center;">
+      <button onclick="closeModal('fontSettingsModal')" style="background:linear-gradient(180deg,#1565c0,#0d47a1); color:white; border:none; padding:12px 24px; border-radius:20px; cursor:pointer; font-weight:700; font-family:inherit; flex:1;">✅ ہو گیا</button>
+      <button onclick="closeModal('fontSettingsModal')" style="background:#ddd; color:#333; border:none; padding:12px 24px; border-radius:20px; cursor:pointer; font-weight:700; font-family:inherit; flex:1;">✕ بند</button>
+    </div>
+  </div>
+</div>
+
+<!-- LOCK SCREEN - SIMPLIFIED WITH NAME INPUT AND 5 TAP SYSTEM -->
+<div id="lockScreen" style="position:fixed; top:0; left:0; width:100%; height:100%; background:linear-gradient(135deg, #0a2e12 0%, #1a5c2a 50%, #0a2e12 100%); z-index:15000; display:flex; flex-direction:column; align-items:center; justify-content:center; color:white; text-align:center; font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu',serif;">
+  
+  <!-- نام بھریں -->
+  <input type="text" id="userName" placeholder="اپنا نام درج کریں..." style="width:280px; padding:14px; border:2px solid var(--gold); border-radius:10px; font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu',serif; font-size:1rem; text-align:right; margin-bottom:30px; color:#333;" dir="rtl">
+  
+  <!-- میری ذاتی ڈائری -->
+  <div style="font-size:1.3rem; margin-bottom:10px; font-family:'Jameel Noori Nastaleeq','Noto Nastaliq Urdu',serif;">میری ذاتی ڈائری</div>
+  
+  <!-- انٹر لفظ - 5 ٹیپ کے لیے -->
+  <div id="enterWord" style="font-size:2rem; font-weight:bold; color:var(--gold); padding:20px 30px; margin:20px 0; border:2px solid var(--gold); border-radius:12px; cursor:pointer; user-select:none; transition:all 0.2s;" ontouchstart="this.style.transform='scale(0.95)'" ontouchend="this.style.transform='scale(1)'">انٹر</div>
+  
+</div>
+
+<!-- MAIN DIARY -->
+<div class="diary-wrapper" id="diaryApp" style="display:none">
+
+  <!-- Side category tabs -->
+  <div class="cat-tabs" id="catTabs"></div>
+
+  <!-- HEADER (compact) -->
+  <div class="diary-header" style="padding:6px 12px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;min-height:0;gap:8px;">
+    <div style="font-size:1.5rem;color:#a5ffb8;line-height:1;">﷽</div>
+    <div style="flex:1;text-align:center;">
+      <div style="font-family:'Jameel Noori Nastaleeq Kasheeda','Jameel Noori Nastaleeq',serif;font-size:1.1rem;font-weight:400;color:#f5d87a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;" id="appHeaderName">محمد شفاء الرحمن اشرف</div>
+      <div style="font-family:'Jameel Noori Nastaleeq Kasheeda',serif;font-size:0.75rem;color:#a8d4ff;margin-top:1px;" id="appHeaderType">علمی اور تحقیقی ڈائری</div>
+    </div>
+    <button onclick="showCustomizeDialog()" style="background:none;border:none;color:#1a5c2a;font-size:1.3rem;cursor:pointer;padding:4px;border-radius:50%;transition:all 0.2s;flex-shrink:0;" title="معلومات تبدیل کریں">⚙️</button>
+  </div>
+
+  <!-- TOOLS BAR (always visible, compact) -->
+  <div id="toolsPanel" style="display:flex;flex-direction:column;background:#fff;border-bottom:2px solid var(--green-pale);flex-shrink:0;">
+    <!-- Row 1: Font + size -->
+    <div style="display:flex;align-items:center;gap:6px;padding:4px 10px 2px;flex-wrap:nowrap;">
+      <span style="font-size:0.72rem;color:var(--green);font-weight:700;flex-shrink:0;">🔤</span>
+      <select class="font-select" id="globalFontSelect" onchange="applyGlobalFont(this.value)" style="flex:1;min-width:0;font-size:0.78rem;padding:4px 6px;">
+        <option value="font-jameel">جمیل نوری نستعلیق</option>
+        <option value="font-jameel-kasheeda">جمیل نوری (کشیدہ)</option>
+        <option value="font-naskh">نسخ (Naskh)</option>
+      </select>
+      <button class="fs-btn" onclick="changeFontSize(-1)" style="width:26px;height:26px;font-size:0.9rem;">−</button>
+      <span class="fs-display" id="fsDisplay" style="font-size:0.7rem;min-width:30px;">100%</span>
+      <button class="fs-btn" onclick="changeFontSize(1)" style="width:26px;height:26px;font-size:0.9rem;">+</button>
+    </div>
+    <!-- Row 2: Action buttons -->
+    <div style="display:flex;gap:4px;padding:2px 10px 4px;flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;">
+      <button class="tool-btn" onclick="showCatModal()" style="font-size:0.7rem;padding:4px 8px;white-space:nowrap;">➕ کیٹگری</button>
+      <button class="tool-btn gold" onclick="showShareBar()" style="font-size:0.7rem;padding:4px 8px;white-space:nowrap;">📤 شیئر</button>
+      <button class="tool-btn gold" onclick="saveToGDrive()" style="font-size:0.7rem;padding:4px 8px;white-space:nowrap;">📦 بیک اپ</button>
+      <button class="tool-btn gold" onclick="document.getElementById('restoreInput').click()" style="font-size:0.7rem;padding:4px 8px;white-space:nowrap;">📥 بحال</button>
+      <input type="file" id="restoreInput" accept=".zip" onchange="restoreFromZip(event)" style="display:none">
+      <button class="tool-btn" onclick="showPwdModal()" style="font-size:0.7rem;padding:4px 8px;white-space:nowrap;">🔑 پاسورڈ</button>
+      <button class="tool-btn" onclick="selectAll()" style="font-size:0.7rem;padding:4px 8px;white-space:nowrap;">☑ سب</button>
+      <button class="tool-btn danger" onclick="deleteSelected()" style="font-size:0.7rem;padding:4px 8px;white-space:nowrap;">🗑 حذف</button>
+    </div>
+    <!-- Share bar -->
+    <div class="share-bar" id="shareBar">
+      <span class="share-count" id="shareCount">0 پوسٹ منتخب</span>
+      <button class="share-via-btn" style="background:#25D366;color:#fff" onclick="shareVia('whatsapp')">📲 WhatsApp</button>
+      <button class="share-via-btn" style="background:#0088cc;color:#fff" onclick="shareVia('telegram')">✈ Telegram</button>
+      <button class="share-via-btn" style="background:var(--gold);color:#1a1a1a" onclick="shareVia('copy')">📋 کاپی</button>
+      <button class="share-via-btn" style="background:#eee;color:#333" onclick="hideShareBar()">✕ بند</button>
+    </div>
+  </div>
+
+  <!-- SEARCH -->
+  <div class="search-section">
+    <div class="search-wrap">
+      <input class="search-input" id="searchInput" type="text" placeholder="🔍 ڈائری میں تلاش کریں..." oninput="handleSearch()">
+      <div class="search-suggestions" id="suggestions"></div>
+    </div>
+  </div>
+
+  <!-- CATEGORY FILTER BAR -->
+  <div class="cat-filter-bar" id="catFilterBar">
+    <button class="cat-pill active" style="background:#1a5c2a" data-cat="all" onclick="filterCat('all',this)">🗂 سب</button>
+  </div>
+
+  <!-- ENTRIES AREA -->
+  <div class="entries-area" id="entriesArea">
+    <div class="no-entries" id="noEntries">
+      ✍ ابھی کوئی اندراج نہیں ہے۔<br>➕ بٹن دبا کر نئی اندراج کریں۔
+    </div>
+  </div>
+
+  <!-- COMPOSE AREA -->
+  
+<!-- COMPOSE MODAL -->
+<div class="modal-overlay" id="composeModal">
+  <div class="modal" style="background:#f9f9f9; border:3px solid var(--gold);">
+    <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; border-bottom:2px solid #ddd; padding-bottom:10px;">
+        <h3 style="margin:0; color:#1a5c2a;">✍ نیا اندراج / ترمیم</h3>
+        <button onclick="closeModal('composeModal')" style="background:#eee; border:none; border-radius:50%; width:30px; height:30px; cursor:pointer; font-weight:bold;">✕</button>
+    </div>
+    <div class="compose-area">
+    <!-- Row 1: Title + Category -->
+    <!-- Row 1.5: Reference Link -->
+    <div style="margin-bottom:8px;display:flex;align-items:center;gap:6px;">
+      <div style="position:relative;flex:1;">
+        <span style="position:absolute;right:10px;top:50%;transform:translateY(-50%);font-size:1rem;pointer-events:none;">🔗</span>
+        <input class="compose-input" id="entryRef" placeholder="لنک یا حوالہ یہاں ڈالیں..." style="width:100%;padding:12px 40px 12px 15px;font-size:0.95rem;border:2px solid #1565c0;border-radius:12px;box-sizing:border-box;direction:ltr;background:#f5f9ff;transition:all 0.3s ease;" oninput="updateLinkPreview()" onfocus="this.style.background='#fff';this.style.borderColor='#0d47a1'" onblur="this.style.background='#f5f9ff'">
+      </div>
+      <button type="button" onclick="pasteLink()" style="display:inline-flex;align-items:center;gap:4px;padding:10px 16px;background:linear-gradient(180deg,#1976d2,#0d47a1);border:none;border-bottom:3px solid #082a6e;border-radius:20px;font-size:0.85rem;color:#fff;font-family:inherit;cursor:pointer;white-space:nowrap;box-shadow:0 3px 8px rgba(13,71,161,0.35);font-weight:700;flex-shrink:0;transition:transform 0.2s;">📋 پیسٹ</button>
+    </div>
+    <div id="linkPreviewBox" style="display:none;margin-bottom:6px;padding:8px 12px;background:linear-gradient(90deg,#e3f2fd,#fffde7);border:1.5px solid #1565c0;border-radius:10px;direction:ltr;word-break:break-all;">
+      <span style="font-size:0.75rem;color:#888;font-family:'Jameel Noori Nastaleeq',serif;direction:rtl;display:block;margin-bottom:2px;">لنک کا پیش نظارہ:</span>
+      <a id="linkPreviewAnchor" href="#" target="_blank" style="color:#1565c0;font-size:0.8rem;text-decoration:none;font-family:monospace;font-weight:600;word-break:break-all;"></a>
+      <button onclick="clearLink()" style="float:left;background:none;border:none;color:#c62828;cursor:pointer;font-weight:700;font-size:0.85rem;padding:0 4px;">✕</button>
+    </div>
+
+    <div style="display:flex;gap:5px;margin-bottom:8px;align-items:center;">
+      <input class="compose-input" id="entryTitle" placeholder="عنوان (اختیاری)..." style="flex:2;min-width:0;padding:12px 15px;font-size:0.95rem;border:2px solid #1a5c2a;border-radius:12px;background:#f0f8f5;transition:all 0.3s ease;" onfocus="this.style.background='#fff';this.style.borderColor='#0d3d1a'" onblur="this.style.background='#f0f8f5'">
+      <select class="cat-select" id="entryCat" style="flex:1;min-width:0;padding:12px 10px;font-size:0.9rem;border:2px solid #1a5c2a;border-radius:12px;background:#f0f8f5;transition:all 0.3s ease;"></select>
+    </div>
+    <!-- Row 2: Font + Action buttons all in one line -->
+    <div style="display:flex;gap:5px;margin-bottom:4px;align-items:center;flex-wrap:nowrap;overflow-x:auto;">
+      <select class="cat-select" id="entryFontSelect" title="فونٹ" onchange="applyComposeFont(this.value)" style="flex:1;min-width:0;padding:5px 6px;font-size:0.75rem;color:#1a5c2a;border-color:#3a9148;">
+        <option value="font-jameel">جمیل نوری نستعلیق</option>
+        <option value="font-jameel-kasheeda">جمیل (کشیدہ)</option>
+        <option value="font-naskh">نسخ</option>
+      </select>
+      <label for="fileInput" style="display:inline-flex;align-items:center;gap:3px;padding:5px 10px;background:linear-gradient(180deg,#fff3e0,#ffe0b2);border:1.5px solid #ffb74d;border-bottom:3px solid #e65100;border-radius:18px;font-size:0.78rem;color:#e65100;font-family:inherit;cursor:pointer;white-space:nowrap;box-shadow:0 2px 5px rgba(0,0,0,0.12);font-weight:600;">📎 فائل</label>
+      <label for="imgInput" style="display:inline-flex;align-items:center;gap:3px;padding:5px 10px;background:linear-gradient(180deg,#e8f5e9,#c8e6c9);border:1.5px solid #3a9148;border-bottom:3px solid #1a5c2a;border-radius:18px;font-size:0.78rem;color:#1a5c2a;font-family:inherit;cursor:pointer;white-space:nowrap;box-shadow:0 2px 5px rgba(0,0,0,0.12);font-weight:600;">🖼 تصویر</label>
+      <button onclick="saveEntry()" style="display:inline-flex;align-items:center;gap:3px;padding:5px 14px;background:linear-gradient(180deg,#e8c97a,#9c7a1e);border:1.5px solid #9c7a1e;border-bottom:3px solid #5a3e08;border-radius:18px;font-size:0.78rem;color:#1a1a1a;font-family:inherit;cursor:pointer;white-space:nowrap;box-shadow:0 2px 5px rgba(0,0,0,0.15);font-weight:700;">💾 محفوظ</button>
+    </div>
+    <!-- Row 2.5: Zoom controls for compose textarea -->
+    <div style="display:flex;gap:6px;margin-bottom:6px;align-items:center;justify-content:flex-end;">
+      <span style="font-size:0.72rem;color:#777;">حجمِ تحریر:</span>
+      <button type="button" onclick="composeZoom(-1)" title="چھوٹا کریں" style="width:28px;height:28px;border-radius:50%;border:1.5px solid #3a9148;background:#fff;color:#1a5c2a;font-weight:700;cursor:pointer;line-height:1;">−</button>
+      <span id="composeFontPct" style="font-size:0.72rem;color:#1a5c2a;min-width:38px;text-align:center;font-weight:600;">100%</span>
+      <button type="button" onclick="composeZoom(1)" title="بڑا کریں" style="width:28px;height:28px;border-radius:50%;border:1.5px solid #3a9148;background:#fff;color:#1a5c2a;font-weight:700;cursor:pointer;line-height:1;">+</button>
+    </div>
+    <!-- Textarea -->
+    <textarea class="compose-textarea font-jameel" id="entryBody" placeholder="یہاں لکھیں..."></textarea>
+    <div class="preview-attach" id="previewAttach" style="margin-top:10px; display:flex; flex-wrap:wrap; gap:5px;"></div>
+    <input type="file" id="fileInput" multiple onchange="handleFiles(event)" style="display:none">
+    <input type="file" id="imgInput" accept="image/*" multiple onchange="handleImages(event)" style="display:none">
+  </div>
+
+  
+  </div>
+</div>
+
+<!-- FLOATING BUTTON -->
+<div class="fab" onclick="openCompose()" title="نیا اندراج">➕</div>
+<!-- FOOTER -->
+  <div class="diary-footer">
+    <span class="footer-txt" id="entryCount">کل اندراجات: 0</span>
+    <div class="footer-icon-btns">
+      <button class="footer-icon-btn" onclick="saveToGDrive()">📦 بیک اپ</button>
+      <button class="footer-icon-btn" onclick="document.getElementById('restoreInput').click()">📥 بحال</button>
+      <button class="footer-icon-btn" onclick="lock()">🔒 لاک</button>
+    </div>
+    <span class="footer-txt">بیک اپ زپ فائل — گوگل ڈرائیو میں محفوظ کریں</span>
+  </div>
+
+</div>
+
+<!-- MODALS -->
+<div class="modal-overlay" id="catModal">
+  <div class="modal">
+    <h3>➕ نئی کیٹگری بنائیں</h3>
+    <input type="text" id="catNameInput" placeholder="کیٹگری کا نام...">
+    <input type="color" id="catColorInput" value="#1a5c2a" style="width:100%;height:40px;border:2px solid var(--gold);border-radius:8px;cursor:pointer;margin-bottom:10px">
+    <div class="modal-btns">
+      <button class="btn-ok" onclick="addCat()">✅ بنائیں</button>
+      <button class="btn-cancel" onclick="closeModal('catModal')">❌ منسوخ</button>
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="pwdModal">
+  <div class="modal">
+    <h3>🔑 پاسورڈ تبدیل کریں</h3>
+    <input type="password" id="oldPwd" placeholder="پرانا پاسورڈ...">
+    <input type="password" id="newPwd" placeholder="نیا پاسورڈ...">
+    <input type="password" id="newPwd2" placeholder="نیا پاسورڈ دوبارہ...">
+    <div id="pwdErr" style="color:#c62828;font-size:0.85rem;min-height:18px;text-align:center"></div>
+    <div class="modal-btns">
+      <button class="btn-ok" onclick="changePwd()">✅ تبدیل کریں</button>
+      <button class="btn-cancel" onclick="closeModal('pwdModal')">❌ منسوخ</button>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+  <!-- IMAGE LIGHTBOX -->
+  <div id="imgLightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:10000; flex-direction:column; align-items:center; justify-content:center; overflow-y:auto;">
+    <div style="position:absolute; top:20px; right:20px; display:flex; gap:15px; z-index:10001;">
+      <button onclick="shareImg()" style="background:#25D366; color:white; border:none; padding:10px 20px; border-radius:25px; cursor:pointer; font-family:inherit; font-weight:bold; box-shadow:0 4px 10px rgba(0,0,0,0.3);">📲 شیئر</button>
+      <button onclick="closeImg()" style="background:#fff; color:#333; border:none; padding:10px 20px; border-radius:25px; cursor:pointer; font-weight:bold; box-shadow:0 4px 10px rgba(0,0,0,0.3);">✕ بند</button>
+    </div>
+    <img id="lightboxImg" style="max-width:95%; max-height:90vh; border-radius:10px; box-shadow:0 0 30px rgba(255,255,255,0.1); object-fit:contain; margin-top:40px;">
+  </div>
+
+
+<!-- ADVANCED SHARE MODAL -->
+<div class="modal-overlay" id="shareOptionsModal">
+  <div class="modal" style="background:#fff; border-radius:20px; padding:20px; max-width:400px;">
+    <h3 style="text-align:center; color:#1a5c2a; margin-top:0;">📤 کیا شیئر کرنا چاہتے ہیں؟</h3>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:10px; margin-top:20px;">
+      <button onclick="doShare('all')" style="padding:15px; background:linear-gradient(135deg,#1a5c2a,#3a9148); border:none; border-radius:15px; cursor:pointer; font-weight:bold; color:white; font-size:1.1rem;">🌟 تصویر کے طور پر شیئر کریں</button>
+      <button onclick="doShare('text')" style="padding:12px; background:#f0f7ff; border:1px solid #bbdefb; border-radius:12px; cursor:pointer; font-weight:bold; color:#1565c0; margin-top:10px;">📝 صرف تحریر (کاپی)</button>
+    </div>
+    <button onclick="closeModal('shareOptionsModal')" style="width:100%; margin-top:20px; padding:10px; background:#eee; border:none; border-radius:10px; font-weight:bold; cursor:pointer;">بند کریں</button>
+  </div>
+</div>
+
+<!-- FULLSCREEN READER -->
+<div id="fullscreenReader">
+  <div class="fs-reader-header">
+    
+    <div class="fs-reader-controls">
+      <select id="fsFontSelect" onchange="applyFsFont(this.value)" style="background:rgba(255,255,255,0.2); color:white; border:1px solid rgba(255,255,255,0.3); border-radius:15px; padding:5px 10px; font-family:inherit; font-size:0.8rem; outline:none; cursor:pointer; font-weight:bold;">
+        <option value="font-jameel">جمیل نوری نستعلیق</option>
+        <option value="font-jameel-kasheeda">جمیل (کشیدہ)</option>
+        <option value="font-naskh">نسخ</option>
+      </select>
+      <button class="fs-size-btn" onclick="fsChangeSize(-1)">−</button>
+      <span class="fs-size-display" id="fsSizeDisplay">100%</span>
+      <button class="fs-size-btn" onclick="fsChangeSize(1)">+</button>
+      <button onclick="openShareOptions()" style="background:#f5d87a; color:#1a1a1a; border:none; border-radius:15px; padding:5px 15px; font-weight:bold; cursor:pointer; font-size:0.8rem;">📤 شیئر</button>
+      <button onclick="editFromFullscreen()" style="background:#3a9148; color:#fff; border:none; border-radius:15px; padding:5px 15px; font-weight:bold; cursor:pointer; font-size:0.8rem;">✏️ ترمیم</button>
+      <button class="fs-close-btn" onclick="closeFullscreen()">✕</button>
+    </div>
+
+    <div class="fs-reader-title" id="fsReaderTitle">پوسٹ</div>
+  </div>
+  <div class="fs-reader-meta" id="fsReaderMeta"></div>
+  <div class="fs-reader-body" id="fsReaderBody"></div>
+</div>
+
+<!-- LINK OPTIONS MODAL -->
+<div class="modal-overlay" id="linkOptionsModal">
+  <div class="modal" style="background:#fff;border-radius:20px;padding:20px;max-width:380px;direction:rtl;">
+    <h3 style="text-align:center;color:#1a5c2a;margin-top:0;margin-bottom:14px;">🔗 لنک کے ساتھ کیا کریں؟</h3>
+    <div id="linkOptionUrlDisplay" style="padding:8px 12px;background:#e3f2fd;border-radius:8px;border:1px solid #bbdefb;font-size:0.75rem;color:#1565c0;margin-bottom:14px;word-break:break-all;direction:ltr;font-family:monospace;"></div>
+    <div style="display:flex;flex-direction:column;gap:8px;">
+      <button onclick="doLinkAction('open')" style="padding:12px;background:linear-gradient(135deg,#1a5c2a,#3a9148);border:none;border-radius:12px;cursor:pointer;font-weight:700;color:#fff;font-family:inherit;font-size:0.9rem;">🌐 براؤزر میں کھولیں</button>
+      <button onclick="doLinkAction('share')" style="padding:12px;background:linear-gradient(135deg,#1565c0,#1976d2);border:none;border-radius:12px;cursor:pointer;font-weight:700;color:#fff;font-family:inherit;font-size:0.9rem;">📤 شیئر کریں</button>
+      <button onclick="doLinkAction('copy')" style="padding:12px;background:linear-gradient(135deg,#e8c97a,#9c7a1e);border:none;border-radius:12px;cursor:pointer;font-weight:700;color:#1a1a1a;font-family:inherit;font-size:0.9rem;">📋 کاپی کریں</button>
+      <button onclick="closeModal('linkOptionsModal')" style="padding:10px;background:#eee;border:none;border-radius:12px;cursor:pointer;font-weight:600;color:#555;font-family:inherit;">بند کریں</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast"></div>
+
+<!-- DRIVE REMINDER OVERLAY -->
+<div id="driveReminderOverlay" style="
+  display:none;
+  position:fixed;
+  bottom:0; left:0; right:0;
+  z-index:8888;
+  padding:12px 16px;
+  background:linear-gradient(135deg,#0a2e12,#1a5c2a);
+  border-top:3px solid var(--gold);
+  flex-direction:column;
+  align-items:center;
+  gap:10px;
+  direction:rtl;
+  box-shadow:0 -4px 20px rgba(0,0,0,0.4);
+">
+  <div id="driveReminderMsg" style="
+    font-family:'Jameel Noori Nastaleeq',serif;
+    font-size:0.95rem;
+    color:var(--gold-light);
+    text-align:center;
+    line-height:1.8;
+  ">📦 ڈائری کا بیک اپ (زپ فائل) لیں اور گوگل ڈرائیو میں محفوظ کریں</div>
+  <div style="display:flex;gap:8px;justify-content:center;">
+    <button onclick="saveToGDrive()" style="
+      background:linear-gradient(180deg,#4db8ff,#1565c0);
+      border:1.5px solid #0d47a1;
+      border-bottom:3px solid #082a6e;
+      border-radius:20px;
+      padding:7px 18px;
+      color:#fff;
+      font-family:inherit;
+      font-size:0.82rem;
+      font-weight:700;
+      cursor:pointer;
+      box-shadow:0 3px 10px rgba(0,0,0,0.25);
+    ">📦 ابھی بیک اپ لیں</button>
+    <button onclick="document.getElementById('driveReminderOverlay').classList.remove('show')" style="
+      background:rgba(255,255,255,0.1);
+      border:1px solid rgba(255,255,255,0.2);
+      border-radius:20px;
+      padding:7px 16px;
+      color:rgba(255,255,255,0.7);
+      font-family:inherit;
+      font-size:0.82rem;
+      cursor:pointer;
+    ">بعد میں</button>
+  </div>
+</div>
+
+<script>
+
+// ===== LOGIN & SECURITY =====
+// Unified system: jsm_diary_pwd / jsm_diary_mobile
+
+function toggleToolsPanel() {
+  var panel = document.getElementById('toolsPanel');
+  if (!panel) return;
+  var isVisible = panel.style.display !== 'none' && panel.style.display !== '';
+  panel.style.display = isVisible ? 'none' : 'flex';
+  panel.style.flexDirection = 'column';
+  var btn = document.querySelector('[onclick="toggleToolsPanel()"]');
+  if (btn) {
+    btn.style.background = isVisible ? 'rgba(255,255,255,0.15)' : 'rgba(255,255,255,0.35)';
+    btn.style.color = isVisible ? 'var(--gold-light)' : '#fff';
+  }
+}
+
+function togglePwdVisibility(id) {
+  var el = document.getElementById(id);
+  el.type = (el.type === 'password') ? 'text' : 'password';
+}
+
+function showSetPwd() {
+  document.getElementById('setPwdModal').style.display = 'flex';
+  // Check if this is first-time setup and no customization yet
+  if (!localStorage.getItem('jsm_diary_owner_name')) {
+    setTimeout(function() {
+      if (document.getElementById('customizeModal')) {
+        showCustomizeDialog();
+      }
+    }, 300);
+  }
+}
+
+function showForgotPwd() {
+  document.getElementById('forgotPwdModal').style.display = 'flex';
+}
+
+function closeModal(id) {
+  var el = document.getElementById(id);
+  if (el) {
+    el.classList.remove('show');
+    el.style.display = '';
+  }
+}
+
+function closeModalDirect(id) {
+  closeModal(id);
+}
+
+var tapCount = 0;
+var tapTimeout = null;
+
+// انٹر والے لفظ پر ٹیپ ٹریک کریں
+document.addEventListener('DOMContentLoaded', function() {
+  var enterWord = document.getElementById('enterWord');
+  if (enterWord) {
+    enterWord.addEventListener('click', function() {
+      tapCount++;
+      
+      // اگر 5 بار ٹیپ ہو گئے تو ڈائری کھول دیں
+      if (tapCount === 5) {
+        var name = document.getElementById('userName').value.trim();
+        
+        // نام سے localStorage میں سیٹ کریں
+        if (name) {
+          localStorage.setItem('jsm_user_name', name);
+          // پرانا پاسورڈ سسٹم صاف کریں
+          localStorage.removeItem('jsm_diary_pwd');
+          localStorage.removeItem('jsm_diary_mobile');
+        }
+        
+        // ڈائری کھولیں
+        document.getElementById('lockScreen').style.display = 'none';
+        document.getElementById('diaryApp').style.display = 'block';
+        if (typeof load === 'function') load();
+        if (typeof init === 'function') init();
+        
+        tapCount = 0;
+      }
+      
+      // 3 سیکنڈ بعد ٹیپ کاؤنٹ ری سیٹ کریں
+      clearTimeout(tapTimeout);
+      tapTimeout = setTimeout(function() {
+        tapCount = 0;
+      }, 3000);
+    });
+  }
+});
+
+function saveNewPwd() {
+  var pwd = document.getElementById('newPwd').value.trim();
+  var mobile = document.getElementById('userMobile').value.trim().replace(/\s/g, '');
+  if (!pwd) {
+    alert('\u26a0 \u067e\u0627\u0633\u0648\u0631\u0688 \u062e\u0627\u0644\u06cc \u0646\u06c1\u06cc\u06ba \u06c1\u0648 \u0633\u06a9\u062a\u0627\u06d4');
+    return;
+  }
+  if (!mobile) {
+    alert('\u26a0 \u0645\u0648\u0628\u0627\u0626\u0644 \u0646\u0645\u0628\u0631 \u0636\u0631\u0648\u0631\u06cc \u06c1\u06d2\u06d4');
+    return;
+  }
+  if (!/^03\d{9}$/.test(mobile)) {
+    alert('\u26a0 \u0645\u0648\u0628\u0627\u0626\u0644 \u0646\u0645\u0628\u0631 \u063a\u0644\u0637 \u06c1\u06d2\u06d4 \u0645\u062b\u0627\u0644\u0627\u064b: 03001234567');
+    return;
+  }
+  localStorage.setItem('jsm_diary_pwd', pwd);
+  localStorage.setItem('jsm_diary_mobile', mobile);
+  closeModal('setPwdModal');
+  document.getElementById('newPwd').value = '';
+  document.getElementById('userMobile').value = '';
+  document.getElementById('lockPwd').value = '';
+  document.getElementById('lockErr').textContent = '';
+  // Show beautiful success overlay
+  showPwdSuccessScreen();
+}
+
+function showPwdSuccessScreen() {
+  // Remove old if exists
+  var old = document.getElementById('pwdSuccessOverlay');
+  if (old) old.remove();
+
+  var ov = document.createElement('div');
+  ov.id = 'pwdSuccessOverlay';
+  ov.style.cssText = 'position:fixed;inset:0;z-index:25000;display:flex;flex-direction:column;align-items:center;justify-content:center;background:linear-gradient(135deg,#0a2e12 0%,#1a5c2a 50%,#0a2e12 100%);font-family:\'Jameel Noori Nastaleeq\',\'Noto Nastaliq Urdu\',serif;direction:rtl;text-align:center;padding:30px;';
+  ov.innerHTML = `
+    <div style="font-size:5rem;margin-bottom:16px;line-height:1;">✅</div>
+    <div style="font-size:1.6rem;font-weight:700;color:#f5d87a;margin-bottom:10px;line-height:2;">پاسورڈ کامیابی سے محفوظ ہو گیا!</div>
+    <div style="font-size:1rem;color:rgba(255,255,255,0.8);margin-bottom:30px;line-height:2;">اب آپ اپنے پاسورڈ سے ڈائری کھول سکتے ہیں۔</div>
+    <button onclick="gotoLoginPage()" style="
+      background: linear-gradient(180deg, #f5d87a 0%, #c9a84c 40%, #9c7a1e 100%);
+      color: #1a1a1a;
+      border: none;
+      border-bottom: 5px solid #5a3e08;
+      border-radius: 30px;
+      padding: 14px 40px;
+      font-size: 1.15rem;
+      font-family: 'Jameel Noori Nastaleeq', serif;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.4), inset 0 2px 0 rgba(255,255,255,0.3);
+      position: relative;
+      top: 0;
+      transition: all 0.15s;
+      letter-spacing: 0.5px;
+      min-width: 220px;
+    "
+    ontouchstart="this.style.top='4px';this.style.borderBottomWidth='1px';"
+    ontouchend="this.style.top='0';this.style.borderBottomWidth='5px';"
+    >
+      🔓 لاگ ان صفحے پر جائیں
+    </button>
+  `;
+  document.body.appendChild(ov);
+}
+
+function gotoLoginPage() {
+  var ov = document.getElementById('pwdSuccessOverlay');
+  if (ov) ov.remove();
+  // Close set pwd modal if open
+  closeModal('setPwdModal');
+  // Make sure lock screen is visible, diary is hidden
+  document.getElementById('lockScreen').style.display = 'flex';
+  document.getElementById('diaryApp').style.display = 'none';
+  document.getElementById('lockPwd').value = '';
+  document.getElementById('lockErr').textContent = '';
+  // Focus password field
+  setTimeout(function() {
+    var p = document.getElementById('lockPwd');
+    if (p) p.focus();
+  }, 100);
+}
+
+// ==== CUSTOMIZATION FUNCTIONS ====
+function loadCustomization() {
+  var name = localStorage.getItem('jsm_diary_owner_name') || 'محمد شفاء الرحمن اشرف';
+  var type = localStorage.getItem('jsm_diary_type') || 'ذاتی ڈائری';
+  
+  // Update everywhere
+  if (document.getElementById('lockScreenName')) document.getElementById('lockScreenName').textContent = name;
+  if (document.getElementById('lockScreenType')) document.getElementById('lockScreenType').textContent = type + ' — پاسورڈ داخل کریں';
+  if (document.getElementById('appHeaderName')) document.getElementById('appHeaderName').textContent = name;
+  if (document.getElementById('appHeaderType')) document.getElementById('appHeaderType').textContent = type;
+  
+  // Load and apply global font
+  loadGlobalFont();
+}
+
+function loadGlobalFont() {
+  var globalFont = localStorage.getItem('jsm_global_font') || 'font-jameel';
+  applyGlobalFontToEntireApp(globalFont);
+}
+
+function applyGlobalFontToEntireApp(fontClass) {
+  // Apply to all entry elements
+  const entries = document.querySelectorAll('.entry, .entry-body, .entry-title');
+  entries.forEach(el => {
+    el.classList.remove('font-jameel', 'font-jameel-kasheeda', 'font-naskh');
+    el.classList.add(fontClass);
+  });
+  
+  // Apply to compose textarea
+  const textarea = document.getElementById('entryBody');
+  if (textarea) {
+    textarea.classList.remove('font-jameel', 'font-jameel-kasheeda', 'font-naskh');
+    textarea.classList.add(fontClass);
+  }
+  
+  // Apply to fullscreen reader
+  const fsBody = document.getElementById('fsReaderBody');
+  if (fsBody) {
+    fsBody.classList.remove('font-jameel', 'font-jameel-kasheeda', 'font-naskh');
+    fsBody.classList.add(fontClass);
+  }
+  
+  // Update all font selects
+  ['globalFontSelect', 'entryFontSelect', 'fsFontSelect'].forEach(id => {
+    const sel = document.getElementById(id);
+    if (sel) sel.value = fontClass;
+  });
+  
+  // Update font button highlights
+  updateFontButtonHighlights(fontClass);
+}
+
+function updateFontButtonHighlights(fontClass) {
+  ['btn-jameel', 'btn-kasheeda', 'btn-naskh'].forEach(id => {
+    const btn = document.getElementById(id);
+    if (btn) {
+      btn.style.background = '#f0f8f5';
+      btn.style.borderColor = '#1a5c2a';
+      btn.style.boxShadow = 'none';
+    }
+  });
+  
+  const activeBtn = document.getElementById('btn-' + (fontClass === 'font-jameel' ? 'jameel' : fontClass === 'font-jameel-kasheeda' ? 'kasheeda' : 'naskh'));
+  if (activeBtn) {
+    activeBtn.style.background = 'linear-gradient(135deg, #1a5c2a, #3a9148)';
+    activeBtn.style.color = 'white';
+    activeBtn.style.borderColor = '#0d3d1a';
+    activeBtn.style.boxShadow = '0 4px 12px rgba(26, 92, 42, 0.3)';
+  }
+}
+
+function showFontSettings() {
+  const fontSettingsModal = document.getElementById('fontSettingsModal');
+  if (fontSettingsModal) {
+    fontSettingsModal.style.display = 'flex';
+    const currentFont = localStorage.getItem('jsm_global_font') || 'font-jameel';
+    updateFontButtonHighlights(currentFont);
+  }
+}
+
+function setAppFont(fontClass) {
+  localStorage.setItem('jsm_global_font', fontClass);
+  applyGlobalFontToEntireApp(fontClass);
+  showToast('✅ فونٹ تبدیل ہو گیا');
+}
+
+function showCustomizeDialog() {
+  var name = localStorage.getItem('jsm_diary_owner_name') || 'محمد شفاء الرحمن اشرف';
+  var type = localStorage.getItem('jsm_diary_type') || 'ذاتی ڈائری';
+  
+  document.getElementById('customizeName').value = name;
+  document.getElementById('customizeType').value = type;
+  
+  document.getElementById('customizeModal').style.display = 'flex';
+  document.getElementById('customizeName').focus();
+}
+
+function saveCustomization() {
+  var name = document.getElementById('customizeName').value.trim();
+  var type = document.getElementById('customizeType').value.trim();
+  
+  if (!name) {
+    showToast('⚠ براہ مہربانی نام درج کریں');
+    return;
+  }
+  if (!type) {
+    showToast('⚠ براہ مہربانی ڈائری کی قسم درج کریں');
+    return;
+  }
+  
+  localStorage.setItem('jsm_diary_owner_name', name);
+  localStorage.setItem('jsm_diary_type', type);
+  
+  loadCustomization();
+  closeModal('customizeModal');
+  showToast('✅ معلومات محفوظ ہو گئیں');
+}
+
+
+function verifyMobile() {
+  var inputMobile = document.getElementById('resetMobile').value.trim().replace(/\s/g, '');
+  var savedMobile = localStorage.getItem('jsm_diary_mobile');
+
+  if (!inputMobile) {
+    alert('\u26a0 \u0645\u0648\u0628\u0627\u0626\u0644 \u0646\u0645\u0628\u0631 \u062f\u0631\u062c \u06a9\u0631\u06cc\u06ba\u06d4');
+    return;
+  }
+  if (!savedMobile) {
+    alert('\u26a0 \u06a9\u0648\u0626\u06cc \u0645\u0648\u0628\u0627\u0626\u0644 \u0646\u0645\u0628\u0631 \u0645\u062d\u0641\u0648\u0638 \u0646\u06c1\u06cc\u06ba\u06d4 \u067e\u06c1\u0644\u06d2 \u067e\u0627\u0633\u0648\u0631\u0688 \u0633\u06cc\u0679 \u06a9\u0631\u06cc\u06ba\u06d4');
+    closeModal('forgotPwdModal');
+    showSetPwd();
+    return;
+  }
+  if (inputMobile === savedMobile) {
+    localStorage.removeItem('jsm_diary_pwd');
+    alert('\u2705 \u0645\u0648\u0628\u0627\u0626\u0644 \u0646\u0645\u0628\u0631 \u062f\u0631\u0633\u062a \u06c1\u06d2!\n\u0627\u0628 \u0646\u06cc\u0627 \u067e\u0627\u0633\u0648\u0631\u0688 \u0633\u06cc\u0679 \u06a9\u0631\u06cc\u06ba\u06d4');
+    closeModal('forgotPwdModal');
+    document.getElementById('resetMobile').value = '';
+    showSetPwd();
+  } else {
+    alert('\u26a0 \u0645\u0648\u0628\u0627\u0626\u0644 \u0646\u0645\u0628\u0631 \u063a\u0644\u0637 \u06c1\u06d2\u06d4');
+  }
+}
+
+function lock() {
+  document.getElementById('lockScreen').style.display = 'flex';
+  document.getElementById('diaryApp').style.display = 'none';
+  document.getElementById('lockPwd').value = '';
+  document.getElementById('lockErr').textContent = '';
+  loginAttempts = 0;
+}
+
+function showPwdModal() {
+  document.getElementById('pwdModal').classList.add('show');
+}
+
+function changePwd() {
+  var old = document.getElementById('oldPwd').value;
+  var n1 = document.getElementById('newPwd').value;
+  var n2 = document.getElementById('newPwd2').value;
+  var stored = localStorage.getItem('jsm_diary_pwd');
+  if (!stored || old !== stored) { document.getElementById('pwdErr').textContent = '\u274c \u067e\u0631\u0627\u0646\u0627 \u067e\u0627\u0633\u0648\u0631\u0688 \u063a\u0644\u0637 \u06c1\u06d2'; return; }
+  if (!n1) { document.getElementById('pwdErr').textContent = '\u0646\u06cc\u0627 \u067e\u0627\u0633\u0648\u0631\u0688 \u062e\u0627\u0644\u06cc \u0646\u06c1\u06cc\u06ba \u06c1\u0648 \u0633\u06a9\u062a\u0627'; return; }
+  if (n1 !== n2) { document.getElementById('pwdErr').textContent = '\u274c \u0646\u0626\u06d2 \u067e\u0627\u0633\u0648\u0631\u0688 \u0645\u0645\u0627\u062b\u0644 \u0646\u06c1\u06cc\u06ba'; return; }
+  localStorage.setItem('jsm_diary_pwd', n1);
+  document.getElementById('oldPwd').value = '';
+  document.getElementById('newPwd').value = '';
+  document.getElementById('newPwd2').value = '';
+  document.getElementById('pwdErr').textContent = '';
+  closeModal('pwdModal');
+  showToast('\u2705 \u067e\u0627\u0633\u0648\u0631\u0688 \u06a9\u0627\u0645\u06cc\u0627\u0628\u06cc \u0633\u06d2 \u062a\u0628\u062f\u06cc\u0644 \u06c1\u0648 \u06af\u06cc\u0627');
+}
+
+// ===== STATE =====
+const DB_KEY = 'jsm_diary_data';
+let state = {
+  entries: [], currentImg: null,
+  categories: [
+    { id: 'cat1', name: 'تحقیقی', color: '#1565c0' },
+    { id: 'cat2', name: 'علمی', color: '#6a1e72' },
+    { id: 'cat3', name: 'ذاتی', color: '#c62828' },
+    { id: 'cat4', name: 'متفرق', color: '#e65100' }
+  ]
+};
+let pendingFiles = [];
+let pendingImages = [];
+let activeCatFilter = 'all';
+let editingId = null;
+
+// ===== STORAGE =====
+function save() {
+  localStorage.setItem(DB_KEY, JSON.stringify(state));
+}
+
+function load() {
+  const d = localStorage.getItem(DB_KEY);
+  if (d) {
+    try { const p = JSON.parse(d); state.entries = p.entries || []; state.categories = p.categories || state.categories; }
+    catch(e) {}
+  }
+  // Load saved font size
+  const saved = localStorage.getItem('jsm_font_size');
+  if (saved) currentFontSize = parseFloat(saved);
+}
+
+// ===== INIT =====
+function init() {
+  loadCustomization();
+  load();
+  buildCatUI();
+  renderEntries();
+  updateCount();
+  // Apply saved global font preference
+  const globalFont = localStorage.getItem('jsm_global_font') || 'font-jameel';
+  applyGlobalFontToEntireApp(globalFont);
+}
+
+// ===== CATEGORIES =====
+function buildCatUI() {
+  // filter bar
+  const bar = document.getElementById('catFilterBar');
+  bar.innerHTML = `<button class="cat-pill ${activeCatFilter==='all'?'active':''}" style="background:#1a5c2a" data-cat="all" onclick="filterCat('all',this)">🗂 سب</button>`;
+  // select
+  const sel = document.getElementById('entryCat');
+  sel.innerHTML = '<option value="">— کیٹگری —</option>';
+  // side tabs
+  const tabs = document.getElementById('catTabs');
+  tabs.innerHTML = '';
+
+  state.categories.forEach(c => {
+    bar.innerHTML += `<button class="cat-pill ${activeCatFilter===c.id?'active':''}" style="background:${c.color}" data-cat="${c.id}" onclick="filterCat('${c.id}',this)">${c.name}</button>`;
+    sel.innerHTML += `<option value="${c.id}">${c.name}</option>`;
+    tabs.innerHTML += `<button class="cat-tab ${activeCatFilter===c.id?'active':''}" style="background:${c.color}" onclick="filterCat('${c.id}',null)">${c.name}</button>`;
+  });
+}
+
+function filterCat(id, btn) {
+  activeCatFilter = id;
+  document.querySelectorAll('.cat-pill').forEach(b => b.classList.remove('active'));
+  document.querySelectorAll('.cat-tab').forEach(b => b.classList.remove('active'));
+  if (btn) btn.classList.add('active');
+  buildCatUI();
+  renderEntries();
+}
+
+
+function openCompose() {
+  clearCompose();
+  var modal = document.getElementById('composeModal');
+  modal.style.display = '';
+  modal.classList.add('show');
+}
+
+function showCatModal() { document.getElementById('catModal').classList.add('show'); }
+
+function addCat() {
+  const name = document.getElementById('catNameInput').value.trim();
+  const color = document.getElementById('catColorInput').value;
+  if (!name) return;
+  state.categories.push({ id: 'cat' + Date.now(), name, color });
+  save();
+  buildCatUI();
+  closeModal('catModal');
+  document.getElementById('catNameInput').value = '';
+  showToast('✅ کیٹگری بن گئی: ' + name);
+}
+
+// ===== COMPOSE FONT & ZOOM (نیا اندراج) =====
+let composeFontScale = 1;
+function applyComposeFont(cls) {
+  localStorage.setItem('jsm_global_font', cls);
+  const ta = document.getElementById('entryBody');
+  // Remove all font classes first
+  ta.classList.remove('font-jameel','font-jameel-kasheeda','font-nastaliq','font-naskh','font-scheherazade','font-lateef','font-gulzar','font-mirza','font-aref','font-thuluth');
+  ta.classList.add(cls);
+  ta.style.setProperty('font-size', composeFontScale + 'rem', 'important');
+  document.getElementById('composeFontPct').textContent = Math.round(composeFontScale * 100) + '%';
+  // Also update global font selects
+  ['globalFontSelect', 'fsFontSelect'].forEach(id => {
+    const sel = document.getElementById(id);
+    if (sel) sel.value = cls;
+  });
+}
+function composeZoom(dir) {
+  composeFontScale = Math.round((composeFontScale + dir * 0.1) * 100) / 100;
+  if (composeFontScale < 0.6) composeFontScale = 0.6;
+  if (composeFontScale > 2.4) composeFontScale = 2.4;
+  document.getElementById('entryBody').style.setProperty('font-size', composeFontScale + 'rem', 'important');
+  document.getElementById('composeFontPct').textContent = Math.round(composeFontScale * 100) + '%';
+}
+
+// ===== ENTRIES =====
+function saveEntry() {
+  const ref = document.getElementById("entryRef").value.trim();
+  const title = document.getElementById('entryTitle').value.trim();
+  const body = document.getElementById('entryBody').value.trim();
+  const catId = document.getElementById('entryCat').value;
+  const font = document.getElementById('entryFontSelect').value;
+  if (!body) { showToast('⚠ کچھ لکھیں پھر محفوظ کریں'); return; }
+
+  const existing = editingId ? state.entries.find(e => e.id === editingId) : null;
+
+  const entry = {
+    id: editingId || ('e' + Date.now()),
+    title: title || '',
+    body,
+    catId,
+    font: font || 'font-jameel',
+    date: existing ? existing.date : new Date().toLocaleDateString('ur-PK'),
+    ref,
+    files: pendingFiles.map(f => ({ name: f.name, type: 'file' })),
+    images: pendingImages
+  };
+
+  if (editingId) {
+    const idx = state.entries.findIndex(e => e.id === editingId);
+    if (idx > -1) state.entries[idx] = entry;
+    editingId = null;
+  } else {
+    state.entries.unshift(entry);
+  }
+
+  save();
+  renderEntries();
+  updateCount();
+  clearCompose(); closeModal("composeModal"); closeModal('composeModal');
+  showToast('✅ اندراج محفوظ ہو گیا (' + fontLabel(font) + ')');
+}
+
+function fontLabel(cls) {
+  const opt = document.querySelector(`#entryFontSelect option[value="${cls}"]`);
+  return opt ? opt.textContent : '';
+}
+
+function clearCompose() {
+  document.getElementById('entryTitle').value = '';
+  document.getElementById('entryBody').value = '';
+  document.getElementById('entryCat').value = ''; document.getElementById('entryRef').value = ''; document.getElementById('entryRef').value = '';
+  document.getElementById('linkPreviewBox').style.display = 'none';
+  const savedFont = localStorage.getItem('jsm_global_font') || 'font-jameel';
+  document.getElementById('entryFontSelect').value = savedFont;
+  composeFontScale = 1;
+  document.getElementById('composeFontPct').textContent = '100%';
+  applyComposeFont(savedFont);
+  pendingFiles = [];
+  pendingImages = [];
+  document.getElementById('previewAttach').innerHTML = '';
+  editingId = null;
+}
+
+function applyGlobalFont(cls) {
+  localStorage.setItem('jsm_global_font', cls);
+  localStorage.setItem('jsm_pref_font', cls);
+  applyGlobalFontToEntireApp(cls);
+  renderEntries();
+  showToast('🔤 فونٹ تبدیل ہو گیا: ' + (document.querySelector('#globalFontSelect option[value="' + cls + '"]') || {textContent: cls}).textContent);
+}
+
+function renderEntries(list) {
+  const entries = list || getFilteredEntries();
+  const area = document.getElementById('entriesArea');
+  const noE = document.getElementById('noEntries');
+
+  if (entries.length === 0) {
+    noE.style.display = 'block';
+    area.innerHTML = '';
+    area.appendChild(noE);
+    return;
+  }
+
+  noE.style.display = 'none';
+
+  // Group entries by category
+  const grouped = {};
+  const ungrouped = [];
+
+  entries.forEach(e => {
+    const cat = state.categories.find(c => c.id === e.catId);
+    if (cat) {
+      if (!grouped[cat.id]) grouped[cat.id] = { cat, items: [] };
+      grouped[cat.id].items.push(e);
+    } else {
+      ungrouped.push(e);
+    }
+  });
+
+  function entryRowHTML(e) {
+    const cat = state.categories.find(c => c.id === e.catId);
+    const fontCls = e.font || localStorage.getItem('jsm_global_font') || 'font-jameel';
+    const title = e.title || '(بے عنوان)';
+    const preview = e.body ? e.body.substring(0, 50).replace(/\n/g,' ') : '';
+    const linkBox = e.ref ? `<div style="margin:2px 0 0 0;padding:3px 8px;background:#e3f2fd;border-radius:6px;border:1px solid #bbdefb;font-size:0.7rem;direction:ltr;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#1565c0;">🔗 ${e.ref}</div>` : '';
+    return `<div class="entry-row" onclick="openFullscreen('${e.id}')" style="display:flex;align-items:center;padding:8px 12px;border-bottom:1px solid #f0ede0;cursor:pointer;gap:6px;background:#fff;transition:background 0.15s;" onmouseenter="this.style.background='#f0faf2'" onmouseleave="this.style.background='#fff'">
+      <div style="flex:1;min-width:0;overflow:hidden;">
+        <div class="${fontCls}" style="font-size:0.95rem;font-weight:700;color:#1a5c2a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${title}</div>
+        ${preview ? `<div class="${fontCls}" style="font-size:0.75rem;color:#999;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;direction:rtl;">${preview}</div>` : ''}
+        ${linkBox}
+      </div>
+      <span style="font-size:0.65rem;color:#bbb;flex-shrink:0;">${e.date}</span>
+      <button class="icon-btn" onclick="event.stopPropagation();editEntry('${e.id}')" title="ترمیم" style="width:24px;height:24px;font-size:0.75rem;flex-shrink:0;">✏</button>
+      <button class="icon-btn del" onclick="event.stopPropagation();deleteEntry('${e.id}')" title="حذف" style="width:24px;height:24px;font-size:0.75rem;flex-shrink:0;">🗑</button>
+      <input type="checkbox" class="entry-select-cb" id="cb_${e.id}" onclick="event.stopPropagation()" onchange="onCheckboxChange()" style="width:16px;height:16px;flex-shrink:0;accent-color:#1a5c2a;">
+    </div>`;
+  }
+
+  let fullHTML = '';
+
+  // Render each category group with header
+  state.categories.forEach(cat => {
+    const grp = grouped[cat.id];
+    if (!grp) return;
+    fullHTML += `
+      <div style="margin-bottom:10px;">
+        <div style="background:linear-gradient(90deg,${cat.color},${cat.color}cc);padding:6px 14px;border-radius:10px 10px 0 0;display:flex;align-items:center;gap:8px;">
+          <span style="width:10px;height:10px;border-radius:50%;background:#fff;display:inline-block;opacity:0.8;flex-shrink:0;"></span>
+          <span style="font-family:'Jameel Noori Nastaleeq',serif;font-weight:700;font-size:0.95rem;color:#fff;">${cat.name}</span>
+          <span style="font-size:0.72rem;color:rgba(255,255,255,0.75);margin-right:auto;">${grp.items.length} اندراج</span>
+        </div>
+        <div style="border-radius:0 0 10px 10px;overflow:hidden;border:1.5px solid ${cat.color}44;border-top:none;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
+          ${grp.items.map(e => entryRowHTML(e)).join('')}
+        </div>
+      </div>`;
+  });
+
+  // Ungrouped entries
+  if (ungrouped.length > 0) {
+    fullHTML += `
+      <div style="margin-bottom:10px;">
+        <div style="background:linear-gradient(90deg,#888,#aaa);padding:6px 14px;border-radius:10px 10px 0 0;display:flex;align-items:center;gap:8px;">
+          <span style="font-family:'Jameel Noori Nastaleeq',serif;font-weight:700;font-size:0.95rem;color:#fff;">متفرق</span>
+        </div>
+        <div style="border-radius:0 0 10px 10px;overflow:hidden;border:1.5px solid #aaa4;border-top:none;">
+          ${ungrouped.map(e => entryRowHTML(e)).join('')}
+        </div>
+      </div>`;
+  }
+
+  area.innerHTML = fullHTML;
+  area.appendChild(noE);
+  applyFontSize();
+}
+
+function onCheckboxChange() {
+  const cnt = document.querySelectorAll('.entry-select-cb:checked').length;
+  updateShareCount();
+  // Show/hide floating share bar based on selection
+  showFloatingShareBar(cnt);
+}
+
+function showFloatingShareBar(cnt) {
+  var existing = document.getElementById('floatingShareBar');
+  if (cnt === 0) {
+    if (existing) existing.style.display = 'none';
+    return;
+  }
+  if (!existing) {
+    existing = document.createElement('div');
+    existing.id = 'floatingShareBar';
+    existing.style.cssText = 'position:fixed;bottom:90px;left:50%;transform:translateX(-50%);z-index:5000;background:linear-gradient(135deg,#1a5c2a,#2d7a3a);border:2px solid var(--gold);border-radius:30px;padding:8px 14px;display:flex;align-items:center;gap:8px;box-shadow:0 6px 24px rgba(0,0,0,0.4);direction:rtl;flex-wrap:nowrap;white-space:nowrap;max-width:95vw;overflow-x:auto;';
+    existing.innerHTML = `
+      <span id="floatingShareCount" style="font-family:'Jameel Noori Nastaleeq',serif;color:#f5d87a;font-weight:700;font-size:0.85rem;flex-shrink:0;">0 منتخب</span>
+      <button onclick="shareVia('whatsapp')" style="background:#25D366;color:#fff;border:none;border-radius:20px;padding:6px 12px;font-family:inherit;font-weight:700;font-size:0.78rem;cursor:pointer;flex-shrink:0;">📲 واٹس ایپ</button>
+      <button onclick="shareVia('copy')" style="background:#f5d87a;color:#1a1a1a;border:none;border-radius:20px;padding:6px 12px;font-family:inherit;font-weight:700;font-size:0.78rem;cursor:pointer;flex-shrink:0;">📋 کاپی</button>
+      <button onclick="deleteSelected()" style="background:#c62828;color:#fff;border:none;border-radius:20px;padding:6px 12px;font-family:inherit;font-weight:700;font-size:0.78rem;cursor:pointer;flex-shrink:0;">🗑 حذف</button>
+      <button onclick="clearAllCheckboxes()" style="background:rgba(255,255,255,0.15);color:#fff;border:1px solid rgba(255,255,255,0.3);border-radius:20px;padding:6px 10px;font-family:inherit;font-size:0.78rem;cursor:pointer;flex-shrink:0;">✕</button>
+    `;
+    document.body.appendChild(existing);
+  }
+  existing.style.display = 'flex';
+  var countEl = document.getElementById('floatingShareCount');
+  if (countEl) countEl.textContent = cnt + ' منتخب';
+}
+
+function clearAllCheckboxes() {
+  document.querySelectorAll('.entry-select-cb').forEach(c => c.checked = false);
+  showFloatingShareBar(0);
+  updateShareCount();
+}
+
+function getFilteredEntries() {
+  if (activeCatFilter === 'all') return state.entries;
+  return state.entries.filter(e => e.catId === activeCatFilter);
+}
+
+function editEntry(id) {
+  const e = state.entries.find(x => x.id === id);
+  if (!e) return;
+  document.getElementById('entryTitle').value = e.title;
+  document.getElementById('entryBody').value = e.body;
+  document.getElementById('entryCat').value = e.catId || ''; document.getElementById('entryRef').value = e.ref || ''; document.getElementById('entryRef').value = e.ref || '';
+  updateLinkPreview();
+  const entryFont = e.font || localStorage.getItem('jsm_global_font') || 'font-jameel';
+  document.getElementById('entryFontSelect').value = entryFont;
+  composeFontScale = 1;
+  document.getElementById('composeFontPct').textContent = '100%';
+  applyComposeFont(entryFont);
+  editingId = id;
+  pendingFiles = [];
+  pendingImages = e.images ? [...e.images] : [];
+  renderPreview();
+  document.querySelector('.compose-area').scrollIntoView({ behavior: 'smooth' });
+  showToast('✏ ترمیم کے لیے تیار ہے'); document.getElementById('composeModal').classList.add('show');
+}
+
+function deleteEntry(id) {
+  if (!confirm('کیا آپ اس اندراج کو حذف کرنا چاہتے ہیں؟')) return;
+  state.entries = state.entries.filter(e => e.id !== id);
+  save();
+  renderEntries();
+  updateCount();
+  showToast('🗑 اندراج حذف ہو گیا');
+}
+
+function deleteSelected() {
+  const cbs = document.querySelectorAll('.entry-select-cb:checked');
+  if (cbs.length === 0) { showToast('⚠ پہلے کوئی اندراج منتخب کریں'); return; }
+  if (!confirm(`${cbs.length} اندراجات حذف کریں؟`)) return;
+  const ids = Array.from(cbs).map(c => c.id.replace('cb_', ''));
+  state.entries = state.entries.filter(e => !ids.includes(e.id));
+  save();
+  renderEntries();
+  updateCount();
+  showFloatingShareBar(0);
+  showToast('🗑 منتخب اندراجات حذف ہوئے');
+}
+
+function selectAll() {
+  document.querySelectorAll('.entry-select-cb').forEach(c => c.checked = true);
+  updateShareCount();
+}
+
+function updateCount() {
+  document.getElementById('entryCount').textContent = 'کل اندراجات: ' + state.entries.length;
+}
+
+
+async function smartPaste() {
+  try {
+    const text = await navigator.clipboard.readText();
+    if (!text) return showToast('⚠ کلپ بورڈ خالی ہے');
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    const urls = text.match(urlRegex);
+    let cleanText = text;
+    let reference = '';
+    if (urls && urls.length > 0) {
+      reference = urls[0];
+      cleanText = text.replace(urls[0], '').trim();
+    }
+    document.getElementById('entryBody').value = cleanText;
+    if (reference) { document.getElementById('entryRef').value = reference; updateLinkPreview(); }
+    showToast('✅ سمارٹ پیسٹ مکمل');
+  } catch (e) { showToast('⚠ پیسٹ کی اجازت نہیں ملی'); }
+}
+
+async function pasteLink() {
+  try {
+    const text = await navigator.clipboard.readText();
+    if (!text) return showToast('⚠ کلپ بورڈ خالی ہے');
+    const urlRegex = /(https?:\/\/[^\s]+)/g;
+    const urls = text.match(urlRegex);
+    const link = (urls && urls.length > 0) ? urls[0] : text.trim();
+    document.getElementById('entryRef').value = link;
+    updateLinkPreview();
+    showToast('✅ لنک پیسٹ ہو گیا');
+  } catch (e) { showToast('⚠ پیسٹ کی اجازت نہیں ملی'); }
+}
+
+function updateLinkPreview() {
+  const val = document.getElementById('entryRef').value.trim();
+  const box = document.getElementById('linkPreviewBox');
+  const anc = document.getElementById('linkPreviewAnchor');
+  if (val) {
+    const url = val.startsWith('http') ? val : ('https://' + val);
+    anc.href = url;
+    anc.textContent = val;
+    box.style.display = 'block';
+  } else {
+    box.style.display = 'none';
+  }
+}
+
+function clearLink() {
+  document.getElementById('entryRef').value = '';
+  document.getElementById('linkPreviewBox').style.display = 'none';
+}
+
+function openImg(src) {
+  state.currentImg = src;
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('imgLightbox').style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+}
+
+function closeImg() {
+  document.getElementById('imgLightbox').style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+
+function shareRef(text) {
+  if (navigator.share) {
+    navigator.share({ title: 'حوالہ', text: text }).catch(() => copyText(text));
+  } else { copyText(text); }
+}
+
+function copyText(t) {
+  navigator.clipboard.writeText(t).then(() => showToast('📋 کاپی ہو گیا'));
+}
+
+function removeImg(i) {
+  pendingImages.splice(i, 1);
+  renderPreview();
+}
+
+// ===== SEARCH =====
+function handleSearch() {
+  const q = document.getElementById('searchInput').value.trim();
+  const sug = document.getElementById('suggestions');
+
+  if (!q) {
+    sug.classList.remove('show');
+    renderEntries();
+    return;
+  }
+
+  const qLow = q.toLowerCase();
+
+  // Match entries where title OR body contains the query
+  const matches = state.entries.filter(e => {
+    const titleMatch = e.title && e.title.toLowerCase().includes(qLow);
+    const bodyMatch = e.body && e.body.toLowerCase().includes(qLow);
+    return titleMatch || bodyMatch;
+  });
+
+  // Suggestions: only show TITLES of matching entries (not body text)
+  // If entry has no title, show first line of body that contains the match
+  const suggestionSet = new Set();
+  const suggestionItems = [];
+
+  matches.forEach(e => {
+    if (e.title && !suggestionSet.has(e.title)) {
+      suggestionSet.add(e.title);
+      suggestionItems.push({ label: e.title, term: e.title });
+    } else if (!e.title) {
+      // Find the line in body that contains the match
+      const lines = e.body.split('\n');
+      const matchLine = lines.find(l => l.toLowerCase().includes(qLow));
+      if (matchLine) {
+        const snippet = matchLine.trim().substring(0, 35);
+        if (!suggestionSet.has(snippet)) {
+          suggestionSet.add(snippet);
+          suggestionItems.push({ label: snippet, term: q });
+        }
+      }
+    }
+  });
+
+  const topSuggestions = suggestionItems.slice(0, 6);
+  sug.innerHTML = topSuggestions.map(s =>
+    `<div class="suggestion-item" onclick="applySearch('${s.term.replace(/'/g,"\\'")}')" style="font-family:'Jameel Noori Nastaleeq',serif;font-size:0.9rem;padding:10px 16px;">🔍 ${s.label}</div>`
+  ).join('');
+  sug.classList.toggle('show', topSuggestions.length > 0);
+
+  renderEntries(matches);
+}
+
+function applySearch(term) {
+  document.getElementById('searchInput').value = term;
+  document.getElementById('suggestions').classList.remove('show');
+  handleSearch();
+}
+
+document.addEventListener('click', e => {
+  if (!e.target.closest('.search-wrap')) {
+    document.getElementById('suggestions').classList.remove('show');
+  }
+});
+
+// ===== ATTACHMENTS =====
+function handleFiles(evt) {
+  pendingFiles = Array.from(evt.target.files);
+  renderPreview();
+  showToast(`📎 ${pendingFiles.length} فائل(یں) منسلک`);
+}
+
+function handleImages(evt) {
+  const files = Array.from(evt.target.files);
+  files.forEach(f => {
+    const reader = new FileReader();
+    reader.onload = ev => {
+      pendingImages.push(ev.target.result);
+      renderPreview();
+    };
+    reader.readAsDataURL(f);
+  });
+  showToast(`🖼 ${files.length} تصویر(یں) شامل`); evt.target.value = "";
+}
+
+function renderPreview() {
+  const div = document.getElementById("previewAttach");
+  const imgs = pendingImages.map((src, i) => `<div style="position:relative;"><img src="${src}" style="width:70px;height:70px;object-fit:cover;border-radius:10px;border:2px solid #ddd;"><span onclick="removeImg(${i})" style="position:absolute;top:-5px;right:-5px;background:#c62828;color:white;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:12px;cursor:pointer;font-weight:bold;">✕</span></div>`).join("");
+  div.innerHTML = imgs;
+}
+function _old_renderPreview() {
+  const div = document.getElementById('previewAttach');
+  const imgs = pendingImages.map((src, i) =>
+    `<img class="preview-thumb" src="${src}"><span style="position:relative;top:-36px;right:-4px;cursor:pointer;color:#c62828;font-weight:700;font-size:0.75rem" onclick="removeImg(${i})">✕</span>`
+  ).join('');
+  const files = pendingFiles.map((f, i) =>
+    `<div class="preview-file">📎 ${f.name} <span class="rm" onclick="removeFile(${i})">✕</span></div>`
+  ).join('');
+  div.innerHTML = imgs + files;
+}
+
+function removeImg(i) { pendingImages.splice(i, 1); renderPreview(); }
+function removeFile(i) { pendingFiles.splice(i, 1); renderPreview(); }
+
+
+function openImg(src) {
+  state.currentImg = src;
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('imgLightbox').style.display = 'flex';
+  document.body.style.overflow = 'hidden'; // Prevent scrolling
+}
+function closeImg() {
+  document.getElementById('imgLightbox').style.display = 'none';
+  document.body.style.overflow = 'auto';
+}
+function shareImg() {
+  if (!state.currentImg) return;
+  const text = "ڈائری سے تصویر شیئر کی گئی ہے";
+  if (navigator.share && !state.currentImg.startsWith('data:')) {
+    navigator.share({ title: 'تصویر', url: state.currentImg }).catch(() => copyImgData());
+  } else {
+    copyImgData();
+  }
+}
+function copyImgData() {
+  navigator.clipboard.writeText(state.currentImg).then(() => showToast('📋 تصویر کا ڈیٹا کاپی ہو گیا'));
+}
+function shareRef(text) {
+  if (navigator.share) {
+    navigator.share({ title: 'حوالہ', text: text }).catch(() => {
+      navigator.clipboard.writeText(text).then(() => showToast('📋 حوالہ کاپی ہو گیا'));
+    });
+  } else {
+    navigator.clipboard.writeText(text).then(() => showToast('📋 حوالہ کاپی ہو گیا'));
+  }
+}
+
+
+// ===== SHARE =====
+function showShareBar() {
+  document.getElementById('shareBar').classList.add('show');
+  updateShareCount();
+}
+
+function hideShareBar() {
+  document.getElementById('shareBar').classList.remove('show');
+}
+
+function updateShareCount() {
+  const cnt = document.querySelectorAll('.entry-select-cb:checked').length;
+  document.getElementById('shareCount').textContent = cnt + ' پوسٹ منتخب';
+}
+
+function shareVia(method) {
+  const selected = Array.from(document.querySelectorAll('.entry-select-cb:checked'))
+    .map(c => c.id.replace('cb_', ''))
+    .map(id => state.entries.find(e => e.id === id))
+    .filter(Boolean);
+
+  if (selected.length === 0) { showToast('⚠ کوئی پوسٹ منتخب نہیں'); return; }
+
+  const text = selected.map(e =>
+    `✍ ${e.title ? e.title + '\n' : ''}${e.date}\n\n${e.body}${e.ref ? '\n🔗 ' + e.ref : ''}`
+  ).join('\n\n━━━━━━━━━━\n\n');
+
+  if (method === 'copy') {
+    navigator.clipboard.writeText(text).then(() => showToast('📋 کلپ بورڈ میں کاپی ہو گیا'));
+  } else if (method === 'whatsapp') {
+    window.open('https://wa.me/?text=' + encodeURIComponent(text));
+  } else if (method === 'telegram') {
+    window.open('https://t.me/share/url?url=&text=' + encodeURIComponent(text));
+  }
+}
+
+// ===== BACKUP (ZIP) / RESTORE =====
+// نوٹ: فونٹس بیک اپ میں شامل نہیں ہوتے — وہ ایپ (HTML فائل) کے اندر ہی پہلے سے موجود رہتے ہیں۔
+// صرف اندراجات، کیٹگریز اور تصاویر بیک اپ ہوتی ہیں — اس لیے بیک اپ فائل ہلکی رہتی ہے۔
+function saveToGDrive() {
+  if (typeof JSZip === 'undefined') {
+    showToast('⚠ زپ لائبریری لوڈ نہیں ہو سکی — انٹرنیٹ چیک کریں');
+    return;
+  }
+  const backupData = {
+    app: 'Easy Khata Diary',
+    version: 1,
+    exportedAt: new Date().toISOString(),
+    entries: state.entries,
+    categories: state.categories
+  };
+  const zip = new JSZip();
+  zip.file('diary_data.json', JSON.stringify(backupData, null, 2));
+  zip.generateAsync({ type: 'blob', compression: 'DEFLATE', compressionOptions: { level: 6 } })
+    .then(blob => {
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'diary_backup_' + new Date().toISOString().slice(0,10) + '.zip';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      URL.revokeObjectURL(url);
+      localStorage.setItem('jsm_last_backup', Date.now().toString());
+      showDriveToast('✅ بیک اپ (zip) ڈاؤن لوڈ ہوئی — اب اسے گوگل ڈرائیو میں اپلوڈ کر دیں');
+    })
+    .catch(() => showToast('⚠ بیک اپ بنانے میں مسئلہ ہوا'));
+}
+
+function restoreFromZip(evt) {
+  const file = evt.target.files[0];
+  if (!file) return;
+  if (typeof JSZip === 'undefined') {
+    showToast('⚠ زپ لائبریری لوڈ نہیں ہو سکی — انٹرنیٹ چیک کریں');
+    evt.target.value = '';
+    return;
+  }
+  JSZip.loadAsync(file)
+    .then(zip => {
+      const jsonFile = zip.file('diary_data.json');
+      if (!jsonFile) throw new Error('invalid-zip');
+      return jsonFile.async('string');
+    })
+    .then(text => {
+      const data = JSON.parse(text);
+      if (!data || !Array.isArray(data.entries)) throw new Error('invalid-data');
+      const count = data.entries.length;
+      if (!confirm(`📥 بحال کریں؟\n\nاس زپ فائل میں ${count} اندراجات ہیں۔\nموجودہ ڈائری کا تمام ڈیٹا (${state.entries.length} اندراجات) اوور رائٹ ہو جائے گا۔\n\nکیا آپ یقینی طور پر آگے بڑھنا چاہتے ہیں؟`)) {
+        evt.target.value = '';
+        return;
+      }
+      state.entries = data.entries || [];
+      state.categories = data.categories || state.categories;
+      save();
+      buildCatUI();
+      renderEntries();
+      updateCount();
+      showToast(`✅ بحالی مکمل — ${count} اندراجات لوڈ ہو گئیں`);
+      evt.target.value = '';
+    })
+    .catch(err => {
+      showToast('⚠ یہ بیک اپ فائل پڑھی نہیں جا سکی — درست zip فائل منتخب کریں');
+      evt.target.value = '';
+    });
+}
+
+function showDriveToast(msg) {
+  const overlay = document.getElementById('driveReminderOverlay');
+  document.getElementById('driveReminderMsg').textContent = msg;
+  overlay.classList.add('show');
+  setTimeout(() => overlay.classList.remove('show'), 5000);
+}
+
+function checkBackupReminder() {
+  const last = parseInt(localStorage.getItem('jsm_last_backup') || '0');
+  const now = Date.now();
+  const hoursSince = (now - last) / (1000 * 60 * 60);
+  // Remind if never backed up OR more than 12 hours ago
+  if (hoursSince > 12 || last === 0) {
+    setTimeout(() => {
+      showDriveReminderPopup();
+    }, 2000);
+  }
+  // Schedule reminders at 8am, 12pm, 8pm
+  scheduleReminders();
+}
+
+function showDriveReminderPopup() {
+  const overlay = document.getElementById('driveReminderOverlay');
+  document.getElementById('driveReminderMsg').textContent = '☁ ڈائری کا بیک اپ گوگل ڈرائیو میں محفوظ کریں';
+  overlay.classList.add('show');
+}
+
+function scheduleReminders() {
+  const now = new Date();
+  const reminderHours = [8, 12, 20]; // 8am, 12pm, 8pm
+  reminderHours.forEach(h => {
+    const target = new Date();
+    target.setHours(h, 0, 0, 0);
+    if (target <= now) target.setDate(target.getDate() + 1);
+    const ms = target - now;
+    setTimeout(() => {
+      showDriveReminderPopup();
+    }, ms);
+  });
+}
+
+function exportDiary() {
+  const lines = state.entries.map(e => {
+    const cat = state.categories.find(c => c.id === e.catId);
+    return `=== ${e.date} | ${cat ? cat.name : ''} ===\n${e.title ? e.title + '\n' : ''}${e.body}\n`;
+  }).join('\n');
+  const blob = new Blob([lines], { type: 'text/plain;charset=utf-8' });
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'diary_export.txt';
+  a.click();
+  URL.revokeObjectURL(url);
+  showToast('⬇ ڈائری برآمد ہو گئی');
+}
+
+// ===== FULLSCREEN READER =====
+
+let currentFsEntryId = null;
+
+function applyFsFont(cls) {
+  localStorage.setItem('jsm_global_font', cls);
+  localStorage.setItem('jsm_pref_font', cls);
+  const body = document.getElementById('fsReaderBody');
+  body.className = 'fs-reader-body ' + cls;
+  // also update all font selects
+  ['globalFontSelect', 'entryFontSelect'].forEach(id => {
+    const sel = document.getElementById(id);
+    if (sel) sel.value = cls;
+  });
+}
+
+function openShareOptions() {
+  if (!currentFsEntryId) { showToast('⚠ پہلے کوئی اندراج کھولیں'); return; }
+  document.getElementById('shareOptionsModal').classList.add('show');
+}
+
+async function doShare(type) {
+  const e = state.entries.find(x => x.id === currentFsEntryId);
+  if (!e) return;
+  closeModal('shareOptionsModal');
+
+  if (type === 'text') {
+    const text = `✍ ${e.title ? e.title + '\n' : ''}${e.date}\n\n${e.body}${e.ref ? '\n\n🔗 ' + e.ref : ''}`;
+    _shareOrCopy(text);
+
+  } else if (type === 'link') {
+    if (!e.ref) { showToast('⚠ اس اندراج میں کوئی لنک نہیں ہے'); return; }
+    _shareOrCopy(e.ref);
+
+  } else if (type === 'image') {
+    await _shareAsImage(e);
+
+  } else if (type === 'all') {
+    // Share image card (best format) with text fallback
+    await _shareAsImage(e, true);
+  }
+}
+
+function _shareOrCopy(text) {
+  if (navigator.share) {
+    navigator.share({ text }).catch(() => {
+      navigator.clipboard.writeText(text).then(() => showToast('📋 کاپی ہو گیا'));
+    });
+  } else {
+    navigator.clipboard.writeText(text).then(() => showToast('📋 کاپی ہو گیا'));
+  }
+}
+
+async function _shareAsImage(e, includeRef) {
+  showToast('⏳ تصویر بن رہی ہے...');
+  try {
+    const cat = state.categories.find(c => c.id === e.catId);
+    const catColor = cat ? cat.color : '#1a5c2a';
+    const fontFamily = e.font || 'font-jameel';
+    // Map font class to CSS font family
+    const fontMap = {
+      'font-jameel': "'Jameel Noori Nastaleeq', serif",
+      'font-jameel-kasheeda': "'Jameel Noori Nastaleeq Kasheeda', serif",
+      'font-nastaliq': "'Noto Nastaliq Urdu', serif",
+      'font-naskh': "'Noto Naskh Arabic', serif",
+      'font-scheherazade': "'Scheherazade New', serif",
+      'font-lateef': "'Lateef', serif",
+      'font-gulzar': "'Gulzar', serif",
+      'font-mirza': "'Mirza', serif",
+      'font-aref': "'Aref Ruqaa', serif",
+      'font-thuluth': "'Thuluth Bold', serif"
+    };
+    const cssFont = fontMap[fontFamily] || "'Jameel Noori Nastaleeq', serif";
+
+    // Build a styled div, render it to canvas via html2canvas-like approach
+    // We'll use an offscreen div + canvas
+    const W = 900, PAD = 44;
+    const canvas = document.createElement('canvas');
+    canvas.width = W;
+
+    // First pass: measure text height using a temp div
+    const tmpDiv = document.createElement('div');
+    tmpDiv.style.cssText = `position:fixed;top:-9999px;left:-9999px;width:${W - PAD*2}px;font-family:${cssFont};font-size:28px;line-height:2.2;direction:rtl;text-align:right;white-space:pre-wrap;word-break:break-word;padding:0;margin:0;`;
+    tmpDiv.textContent = e.body;
+    document.body.appendChild(tmpDiv);
+    const textH = tmpDiv.offsetHeight;
+    document.body.removeChild(tmpDiv);
+
+    const headerH = 90, footerH = 58, titleH = e.title ? 54 : 0, refH = (includeRef && e.ref) ? 44 : 0;
+    canvas.height = headerH + titleH + PAD + textH + PAD + refH + footerH + 20;
+
+    const ctx = canvas.getContext('2d');
+
+    // Background
+    const bg = ctx.createLinearGradient(0, 0, W, canvas.height);
+    bg.addColorStop(0, '#fffef8');
+    bg.addColorStop(1, '#f0faf2');
+    ctx.fillStyle = bg;
+    ctx.fillRect(0, 0, W, canvas.height);
+
+    // Header bar
+    const hGrad = ctx.createLinearGradient(0, 0, W, 0);
+    hGrad.addColorStop(0, catColor);
+    hGrad.addColorStop(1, '#1a5c2a');
+    ctx.fillStyle = hGrad;
+    ctx.fillRect(0, 0, W, headerH);
+
+    // Gold border bottom of header
+    ctx.fillStyle = '#c9a84c';
+    ctx.fillRect(0, headerH - 4, W, 4);
+
+    // TOP LINE: بسم اللہ (most prominent, centered)
+    ctx.fillStyle = '#f5d87a';
+    ctx.font = `bold 36px 'Jameel Noori Nastaleeq', serif`;
+    ctx.textAlign = 'center';
+    ctx.direction = 'rtl';
+    ctx.fillText('﷽', W / 2, 52);
+
+    // Date (small, left)
+    ctx.fillStyle = 'rgba(255,255,255,0.75)';
+    ctx.font = `18px monospace`;
+    ctx.textAlign = 'left';
+    ctx.direction = 'ltr';
+    ctx.fillText(e.date, PAD, 82);
+
+    // Category badge (right)
+    if (cat) {
+      ctx.fillStyle = 'rgba(255,255,255,0.2)';
+      ctx.beginPath();
+      ctx.roundRect(W - PAD - 120, 66, 120, 26, 13);
+      ctx.fill();
+      ctx.fillStyle = '#fff';
+      ctx.font = `bold 16px 'Jameel Noori Nastaleeq', serif`;
+      ctx.textAlign = 'right';
+      ctx.direction = 'rtl';
+      ctx.fillText(cat.name, W - PAD - 8, 84);
+    }
+
+    let y = headerH;
+
+    // Title
+    if (e.title) {
+      ctx.fillStyle = catColor;
+      ctx.font = `bold 32px 'Jameel Noori Nastaleeq', serif`;
+      ctx.textAlign = 'right';
+      ctx.direction = 'rtl';
+      ctx.fillText(e.title, W - PAD, y + 40);
+      // underline
+      ctx.fillStyle = '#c9a84c';
+      ctx.fillRect(PAD, y + 48, W - PAD*2, 2);
+      y += titleH;
+    }
+
+    // Body text — wrap manually
+    y += PAD;
+    ctx.fillStyle = '#1a1a1a';
+    ctx.font = `28px ${cssFont}`;
+    ctx.textAlign = 'right';
+    ctx.direction = 'rtl';
+    const lineH = 62;
+    const maxW = W - PAD * 2;
+    const lines = e.body.split('\n');
+    for (const line of lines) {
+      // word-wrap each line
+      let words = line.split(' ');
+      let cur = '';
+      for (const w of words) {
+        const test = cur ? w + ' ' + cur : w;
+        if (ctx.measureText(test).width > maxW && cur) {
+          ctx.fillText(cur, W - PAD, y);
+          y += lineH;
+          cur = w;
+        } else { cur = test; }
+      }
+      if (cur) { ctx.fillText(cur, W - PAD, y); y += lineH; }
+    }
+
+    // Reference
+    if (includeRef && e.ref) {
+      y += 10;
+      ctx.fillStyle = '#e3f2fd';
+      ctx.beginPath();
+      ctx.roundRect(PAD, y, W - PAD*2, 38, 10);
+      ctx.fill();
+      ctx.fillStyle = '#1565c0';
+      ctx.font = `20px 'Jameel Noori Nastaleeq', serif`;
+      ctx.textAlign = 'right';
+      ctx.fillText('🔗 ' + e.ref, W - PAD - 8, y + 26);
+      y += refH;
+    }
+
+    // Footer
+    const ftY = canvas.height - footerH;
+    ctx.fillStyle = '#1a5c2a';
+    ctx.fillRect(0, ftY, W, footerH);
+    ctx.fillStyle = '#c9a84c';
+    ctx.fillRect(0, ftY, W, 3);
+    ctx.fillStyle = '#f5d87a';
+    ctx.font = `20px 'Jameel Noori Nastaleeq', serif`;
+    ctx.textAlign = 'center';
+    ctx.direction = 'rtl';
+    ctx.fillText('محمد شفاء الرحمن اشرف — علمی و تحقیقی ڈائری', W/2, ftY + 36);
+
+    // Convert to blob and share
+    canvas.toBlob(async (blob) => {
+      if (!blob) { showToast('⚠ تصویر نہیں بن سکی'); return; }
+      if (navigator.share && navigator.canShare && navigator.canShare({ files: [new File([blob], 'diary.png', { type: 'image/png' })] })) {
+        try {
+          await navigator.share({
+            files: [new File([blob], 'diary.png', { type: 'image/png' })],
+            text: e.title || 'ڈائری اندراج'
+          });
+          showToast('✅ شیئر ہو گیا');
+        } catch(err) {
+          if (err.name !== 'AbortError') _downloadImg(blob, canvas);
+        }
+      } else {
+        // Fallback: show image in lightbox with download option
+        _downloadImg(blob, canvas);
+      }
+    }, 'image/png');
+  } catch(err) {
+    console.error(err);
+    showToast('⚠ تصویر بنانے میں مسئلہ: ' + err.message);
+  }
+}
+
+
+// ===== PDF DOWNLOAD =====
+function downloadAsPDF() {
+  const e = state.entries.find(x => x.id === currentFsEntryId);
+  if (!e) { showToast('⚠ اندراج نہیں ملا'); return; }
+  
+  try {
+    // Use html2pdf library if available, otherwise use canvas-based approach
+    const element = document.getElementById('fsReaderBody');
+    if (!element) return;
+    
+    // Create a simple PDF using canvas
+    const canvas = document.createElement('canvas');
+    const W = 800, PAD = 40;
+    const ctx = canvas.getContext('2d');
+    
+    // Set canvas size
+    canvas.width = W;
+    canvas.height = 1200;
+    
+    // Background
+    ctx.fillStyle = '#fffef8';
+    ctx.fillRect(0, 0, W, canvas.height);
+    
+    // Header
+    ctx.fillStyle = '#1a5c2a';
+    ctx.fillRect(0, 0, W, 80);
+    ctx.fillStyle = '#f5d87a';
+    ctx.font = 'bold 28px Jameel Noori Nastaleeq, serif';
+    ctx.textAlign = 'center';
+    ctx.direction = 'rtl';
+    ctx.fillText('محمد شفاء الرحمن اشرف — ڈائری', W/2, 50);
+    
+    // Title
+    let y = 120;
+    if (e.title) {
+      ctx.fillStyle = '#1a5c2a';
+      ctx.font = 'bold 24px Jameel Noori Nastaleeq, serif';
+      ctx.textAlign = 'right';
+      ctx.fillText(e.title, W - PAD, y);
+      y += 50;
+    }
+    
+    // Date
+    ctx.fillStyle = '#666';
+    ctx.font = '14px monospace';
+    ctx.textAlign = 'right';
+    ctx.fillText('تاریخ: ' + e.date, W - PAD, y);
+    y += 40;
+    
+    // Body text
+    ctx.fillStyle = '#333';
+    ctx.font = '16px Jameel Noori Nastaleeq, serif';
+    ctx.textAlign = 'right';
+    ctx.direction = 'rtl';
+    
+    const lineH = 28;
+    const maxW = W - PAD * 2;
+    const lines = e.body.split('\n');
+    
+    for (const line of lines) {
+      let words = line.split(' ');
+      let cur = '';
+      for (const w of words) {
+        const test = cur ? w + ' ' + cur : w;
+        if (ctx.measureText(test).width > maxW && cur) {
+          ctx.fillText(cur, W - PAD, y);
+          y += lineH;
+          cur = w;
+        } else { cur = test; }
+      }
+      if (cur) { ctx.fillText(cur, W - PAD, y); y += lineH; }
+    }
+    
+    // Convert to blob and download
+    canvas.toBlob((blob) => {
+      if (!blob) { showToast('⚠ PDF نہیں بن سکی'); return; }
+      
+      // Create download link
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'diary_' + e.id + '.png';
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast('✅ تصویر ڈاؤن لوڈ ہو گئی');
+    }, 'image/png');
+  } catch(err) {
+    console.error(err);
+    showToast('⚠ PDF بنانے میں مسئلہ');
+  }
+}
+
+function downloadAsImage() {
+  const e = state.entries.find(x => x.id === currentFsEntryId);
+  if (!e) { showToast('⚠ اندراج نہیں ملا'); return; }
+  
+  try {
+    const canvas = document.createElement('canvas');
+    const W = 600, PAD = 30;
+    const ctx = canvas.getContext('2d');
+    
+    canvas.width = W;
+    canvas.height = 800;
+    
+    // Background
+    ctx.fillStyle = '#fffef8';
+    ctx.fillRect(0, 0, W, canvas.height);
+    
+    // Header
+    ctx.fillStyle = '#1a5c2a';
+    ctx.fillRect(0, 0, W, 60);
+    ctx.fillStyle = '#f5d87a';
+    ctx.font = 'bold 20px Jameel Noori Nastaleeq, serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('📔 ڈائری', W/2, 40);
+    
+    // Title
+    let y = 90;
+    if (e.title) {
+      ctx.fillStyle = '#1a5c2a';
+      ctx.font = 'bold 18px Jameel Noori Nastaleeq, serif';
+      ctx.textAlign = 'right';
+      ctx.fillText(e.title, W - PAD, y);
+      y += 40;
+    }
+    
+    // Body
+    ctx.fillStyle = '#333';
+    ctx.font = '14px Jameel Noori Nastaleeq, serif';
+    ctx.textAlign = 'right';
+    ctx.direction = 'rtl';
+    
+    const lineH = 22;
+    const maxW = W - PAD * 2;
+    const lines = e.body.substring(0, 200).split('\n');
+    
+    for (const line of lines) {
+      if (y > canvas.height - 40) break;
+      let words = line.split(' ');
+      let cur = '';
+      for (const w of words) {
+        const test = cur ? w + ' ' + cur : w;
+        if (ctx.measureText(test).width > maxW && cur) {
+          ctx.fillText(cur, W - PAD, y);
+          y += lineH;
+          cur = w;
+        } else { cur = test; }
+      }
+      if (cur) { ctx.fillText(cur, W - PAD, y); y += lineH; }
+    }
+    
+    canvas.toBlob((blob) => {
+      if (!blob) { showToast('⚠ تصویر نہیں بن سکی'); return; }
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'diary_' + e.id + '.png';
+      a.click();
+      URL.revokeObjectURL(url);
+      showToast('✅ تصویر ڈاؤن لوڈ ہو گئی');
+    }, 'image/png');
+  } catch(err) {
+    console.error(err);
+    showToast('⚠ تصویر بنانے میں مسئلہ');
+  }
+}
+
+function _downloadImg(blob, canvas) {
+  // Show the generated image in a preview overlay for the user to long-press save/share
+  let ov = document.getElementById('shareImgPreview');
+  if (!ov) {
+    ov = document.createElement('div');
+    ov.id = 'shareImgPreview';
+    ov.style.cssText = 'position:fixed;inset:0;background:rgba(0,0,0,0.92);z-index:19999;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;';
+    ov.innerHTML = '<p style="color:#f5d87a;font-family:Jameel Noori Nastaleeq,serif;font-size:1rem;text-align:center;margin:0;">تصویر کو دبا کر رکھیں → محفوظ/شیئر کریں</p><img id="shareImgEl" style="max-width:95%;max-height:75vh;border-radius:12px;border:2px solid #c9a84c;"><div style="display:flex;gap:10px;"><button id="shareImgDl" style="background:#c9a84c;color:#1a1a1a;border:none;border-radius:20px;padding:10px 24px;font-weight:700;cursor:pointer;font-family:inherit;">⬇ ڈاؤن لوڈ</button><button onclick="document.getElementById(\'shareImgPreview\').remove()" style="background:#555;color:#fff;border:none;border-radius:20px;padding:10px 20px;font-weight:700;cursor:pointer;">✕ بند</button></div>';
+    document.body.appendChild(ov);
+  }
+  const url = URL.createObjectURL(blob);
+  document.getElementById('shareImgEl').src = url;
+  document.getElementById('shareImgDl').onclick = () => {
+    const a = document.createElement('a');
+    a.href = url; a.download = 'diary_entry.png'; a.click();
+  };
+  ov.style.display = 'flex';
+}
+
+let fsFontSize = parseFloat(localStorage.getItem('jsm_fs_font_size') || '1.3');
+
+function openFullscreen(id) {
+  currentFsEntryId = id;
+  const e = state.entries.find(x => x.id === id);
+  if (!e) return;
+
+  const cat = state.categories.find(c => c.id === e.catId);
+
+  // Set title
+  document.getElementById('fsReaderTitle').textContent = e.title || 'پوسٹ';
+
+  // Set meta
+  const meta = document.getElementById('fsReaderMeta');
+  meta.innerHTML = `
+    ${cat ? `<span class="fs-meta-cat" style="background:${cat.color}">${cat.name}</span>` : ''}
+    <span style="font-family:'Jameel Noori Nastaleeq',serif;font-size:0.8rem;color:#555;direction:rtl;">${e.title || ''}</span>
+    <span class="fs-meta-date">${e.date}</span>
+  `;
+
+  // Set body + ref + images
+  const body = document.getElementById('fsReaderBody');
+  let extraHtml = '';
+  if (e.ref) {
+    const isLink = e.ref.startsWith('http') || e.ref.includes('.');
+    const url = isLink ? (e.ref.startsWith('http') ? e.ref : 'https://' + e.ref) : null;
+    const safeRef = e.ref.replace(/'/g, "\\'");
+    extraHtml += `<div style="margin-top:16px;padding:10px 14px;background:#e3f2fd;border-radius:12px;border:1px solid #bbdefb;font-size:0.85rem;direction:ltr;">` +
+      (url ? `<span onclick="showLinkOptions('${safeRef}')" style="color:#1565c0;font-weight:600;text-decoration:none;cursor:pointer;display:inline-block;width:100%;">🔗 ${e.ref}</span>` : `<span style="color:#444;">📚 ${e.ref}</span>`) +
+      `</div>`;
+  }
+  if (e.images && e.images.length) {
+    extraHtml += `<div style="display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;">` +
+      e.images.map(src => `<img src="${src}" style="max-width:100%;border-radius:10px;border:2px solid var(--gold);cursor:pointer;" onclick="openImg('${src}')">`).join('') +
+      `</div>`;
+  }
+  body.innerHTML = `<div style="white-space:pre-wrap;word-break:break-word;">${e.body.replace(/</g,'&lt;').replace(/>/g,'&gt;')}</div>${extraHtml}`;
+
+  // Apply font class and size — global font takes priority for reading
+  const fontCls = localStorage.getItem('jsm_global_font') || 'font-jameel';
+  body.className = 'fs-reader-body ' + fontCls;
+  document.getElementById('fsFontSelect').value = fontCls;
+  body.style.fontSize = fsFontSize + 'rem';
+
+  // Update size display
+  updateFsSizeDisplay();
+
+  // Open
+  const reader = document.getElementById('fullscreenReader');
+  reader.classList.add('open');
+  body.scrollTop = 0;
+
+  // Try native fullscreen on desktop
+  if (reader.requestFullscreen) {
+    reader.requestFullscreen().catch(() => {});
+  }
+}
+
+function closeFullscreen() {
+  document.getElementById('fullscreenReader').classList.remove('open');
+  if (document.fullscreenElement) {
+    document.exitFullscreen().catch(() => {});
+  }
+}
+
+function editFromFullscreen() {
+  const id = currentFsEntryId;
+  closeFullscreen();
+  if (id) editEntry(id);
+}
+
+function fsChangeSize(dir) {
+  const newSize = Math.round((fsFontSize + dir * 0.1) * 100) / 100;
+  if (newSize < 0.8 || newSize > 3.0) return;
+  fsFontSize = newSize;
+  document.getElementById('fsReaderBody').style.fontSize = fsFontSize + 'rem';
+  localStorage.setItem('jsm_fs_font_size', fsFontSize.toString());
+  updateFsSizeDisplay();
+}
+
+function updateFsSizeDisplay() {
+  const pct = Math.round((fsFontSize / 1.3) * 100);
+  const disp = document.getElementById('fsSizeDisplay');
+  if (disp) disp.textContent = pct + '%';
+}
+
+// Close fullscreen on back button (Android)
+document.addEventListener('fullscreenchange', () => {
+  if (!document.fullscreenElement) {
+    document.getElementById('fullscreenReader').classList.remove('open');
+  }
+});
+
+// ===== FONT SIZE CONTROL =====
+let currentFontSize = parseFloat(localStorage.getItem('jsm_font_size') || '1.05');
+const FONT_STEP = 0.1;
+const FONT_MIN = 0.7;
+const FONT_MAX = 2.2;
+
+function applyFontSize() {
+  document.querySelectorAll('.entry-body').forEach(el => {
+    el.style.fontSize = currentFontSize + 'rem';
+  });
+  const pct = Math.round((currentFontSize / 1.05) * 100);
+  const disp = document.getElementById('fsDisplay');
+  if (disp) disp.textContent = pct + '%';
+  localStorage.setItem('jsm_font_size', currentFontSize.toString());
+}
+
+function changeFontSize(dir) {
+  const newSize = Math.round((currentFontSize + dir * FONT_STEP) * 100) / 100;
+  if (newSize < FONT_MIN || newSize > FONT_MAX) {
+    showToast(dir > 0 ? '⚠ زیادہ سے زیادہ سائز' : '⚠ کم سے کم سائز');
+    return;
+  }
+  currentFontSize = newSize;
+  applyFontSize();
+  showToast(dir > 0 ? '🔠 متن بڑا ہو گیا' : '🔡 متن چھوٹا ہو گیا');
+}
+
+let _currentLinkUrl = '';
+
+function showLinkOptions(ref) {
+  const url = ref.startsWith('http') ? ref : 'https://' + ref;
+  _currentLinkUrl = url;
+  document.getElementById('linkOptionUrlDisplay').textContent = ref;
+  document.getElementById('linkOptionsModal').classList.add('show');
+}
+
+function doLinkAction(action) {
+  closeModal('linkOptionsModal');
+  if (action === 'open') {
+    window.open(_currentLinkUrl, '_blank');
+  } else if (action === 'share') {
+    if (navigator.share) {
+      navigator.share({ url: _currentLinkUrl, title: 'لنک' }).catch(() => {
+        navigator.clipboard.writeText(_currentLinkUrl).then(() => showToast('📋 لنک کاپی ہو گیا'));
+      });
+    } else {
+      navigator.clipboard.writeText(_currentLinkUrl).then(() => showToast('📋 لنک کاپی ہو گیا'));
+    }
+  } else if (action === 'copy') {
+    navigator.clipboard.writeText(_currentLinkUrl).then(() => showToast('📋 لنک کاپی ہو گیا'));
+  }
+}
+
+// ===== TOAST =====
+function showToast(msg) {
+  const t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  setTimeout(() => t.classList.remove('show'), 2600);
+}
+
+// ===== AUTO-OPEN if no password set =====
+window.onload = function() {
+  loadCustomization();
+  const globalFont = localStorage.getItem('jsm_global_font') || 'font-jameel';
+  const savedFont = localStorage.getItem('jsm_pref_font') || globalFont;
+  if (savedFont || globalFont) {
+    const sel = document.getElementById('globalFontSelect');
+    if (sel) sel.value = globalFont;
+    const entrySel = document.getElementById('entryFontSelect');
+    if (entrySel) entrySel.value = globalFont;
+    const ta = document.getElementById('entryBody');
+    if (ta) {
+      ta.classList.remove('font-jameel','font-jameel-kasheeda','font-naskh');
+      ta.classList.add(globalFont);
+    }
+  }
+  if (!localStorage.getItem('jsm_diary_pwd')) {
+    document.getElementById('lockScreen').style.display = 'flex';
+  }
+};
+
+// Called after successful login
+const _origInit = typeof init === 'function' ? init : null;
+function initWithReminder() {
+  if (_origInit) _origInit();
+  checkBackupReminder();
+}
+</script>
+<script>
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js').catch(function (err) {
+      console.warn('SW registration failed:', err);
+    });
+  });
+}
+</script>
+</body>
+</html>
