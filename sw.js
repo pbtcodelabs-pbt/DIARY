@@ -1,57 +1,47 @@
-// Diary App - Service Worker
-// اس کا کام: انٹرنیٹ نہ ہونے پر بھی ڈائری کھلی رہے (آف لائن سپورٹ)
-
-const CACHE_NAME = 'diary-cache-v1';
-const CORE_ASSETS = [
+// ڈائری — Service Worker (آف لائن سپورٹ)
+// ہر نئی ڈیلیوری پر CACHE_VERSION نمبر بڑھانا ضروری ہے تاکہ پرانا کیش ہٹ کر نیا لوڈ ہو
+const CACHE_VERSION = 'dry-cache-DRY001';
+const ASSETS = [
   './',
-  'index.html',
-  'manifest.json',
-  'icon-192.png',
-  'icon-512.png',
-  'apple-touch-icon.png'
+  './index.html',
+  './manifest.json',
+  './icon-192.png',
+  './icon-512.png'
 ];
 
-// انسٹال: بنیادی فائلیں کیش کریں
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(CORE_ASSETS))
+    caches.open(CACHE_VERSION).then((cache) => cache.addAll(ASSETS)).catch(() => {})
   );
   self.skipWaiting();
 });
 
-// ایکٹیویٹ: پرانے کیش صاف کریں
 self.addEventListener('activate', (event) => {
   event.waitUntil(
     caches.keys().then((keys) =>
       Promise.all(
-        keys
-          .filter((key) => key !== CACHE_NAME)
-          .map((key) => caches.delete(key))
+        keys.filter((k) => k !== CACHE_VERSION).map((k) => caches.delete(k))
       )
     )
   );
   self.clients.claim();
 });
 
-// فیچ: پہلے نیٹ ورک آزمائیں، ناکامی پر کیش سے دیں (اور کیش تازہ کریں)
+// Cache-first: پہلے کیش سے دو، نہ ملے تو نیٹ ورک سے لاؤ اور کیش کر لو
 self.addEventListener('fetch', (event) => {
   if (event.request.method !== 'GET') return;
-
   event.respondWith(
-    fetch(event.request)
-      .then((response) => {
-        const copy = response.clone();
-        caches.open(CACHE_NAME).then((cache) => cache.put(event.request, copy));
-        return response;
-      })
-      .catch(() =>
-        caches.match(event.request).then((cached) => {
-          if (cached) return cached;
-          // نیویگیشن ریکویسٹ ہو تو مرکزی صفحہ واپس دیں
-          if (event.request.mode === 'navigate') {
-            return caches.match('index.html');
+    caches.match(event.request).then((cached) => {
+      if (cached) return cached;
+      return fetch(event.request)
+        .then((response) => {
+          if (response && response.status === 200 && response.type === 'basic') {
+            const clone = response.clone();
+            caches.open(CACHE_VERSION).then((cache) => cache.put(event.request, clone));
           }
+          return response;
         })
-      )
+        .catch(() => cached);
+    })
   );
 });
