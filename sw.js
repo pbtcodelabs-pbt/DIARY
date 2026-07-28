@@ -1,6 +1,6 @@
 // ڈائری — Service Worker (آف لائن سپورٹ)
 // ہر نئی ڈیلیوری پر CACHE_VERSION نمبر بڑھانا ضروری ہے تاکہ پرانا کیش ہٹ کر نیا لوڈ ہو
-const CACHE_VERSION = 'dry-cache-DRY002';
+const CACHE_VERSION = 'dry-cache-DRY003';
 const ASSETS = [
   './',
   './index.html',

@@ -1464,7 +1464,7 @@
     <button type="button" onclick="refreshApp()" title="تازہ کریں" style="background:#111;border:1px solid #444;color:#f5d87a;font-size:0.85rem;border-radius:50%;width:26px;height:26px;cursor:pointer;line-height:1;flex-shrink:0;">🔄</button>
   </div>
   <div style="text-align:center;padding:0 0 4px;background:#0a1a0f;flex-shrink:0;">
-    <span id="appVersionDisplay" style="font-size:0.68rem;font-weight:700;color:#f5d87a;">ورژن: DRY002</span>
+    <span id="appVersionDisplay" style="font-size:0.68rem;font-weight:700;color:#f5d87a;">ورژن: DRY003</span>
   </div>
 
   <!-- TOOLS BAR (always visible, compact) -->
@@ -1731,7 +1731,7 @@
 <script>
 
 // ===== APP VERSION =====
-const APP_VERSION = 'DRY002';
+const APP_VERSION = 'DRY003';
 
 // ===== PWA: SERVICE WORKER REGISTRATION (آف لائن سپورٹ) =====
 if ('serviceWorker' in navigator) {
@@ -2327,14 +2327,14 @@ function renderEntries(list) {
     const fontCls = e.font || localStorage.getItem('jsm_global_font') || 'font-nastaliq';
     const title = e.title || '(بے عنوان)';
     const preview = e.body ? e.body.substring(0, 50).replace(/\n/g,' ') : '';
-    const linkBox = e.ref ? `<div style="margin:2px 0 0 0;padding:3px 8px;background:#e3f2fd;border-radius:6px;border:1px solid #bbdefb;font-size:0.7rem;direction:ltr;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#1565c0;">🔗 ${e.ref}</div>` : '';
+    const linkBox = e.ref ? `<div style="margin:2px 0 0 0;padding:3px 8px;background:#e3f2fd;border-radius:6px;border:1px solid #bbdefb;font-size:0.7em;direction:ltr;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#1565c0;">🔗 ${e.ref}</div>` : '';
     return `<div class="entry-row" onclick="openFullscreen('${e.id}')" style="display:flex;align-items:center;padding:8px 12px;border-bottom:1px solid #f0ede0;cursor:pointer;gap:6px;background:#fff;transition:background 0.15s;" onmouseenter="this.style.background='#f0faf2'" onmouseleave="this.style.background='#fff'">
       <div style="flex:1;min-width:0;overflow:hidden;">
-        <div class="${fontCls}" style="font-size:0.95rem;font-weight:700;color:#1a5c2a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${title}</div>
-        ${preview ? `<div class="${fontCls}" style="font-size:0.75rem;color:#999;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;direction:rtl;">${preview}</div>` : ''}
+        <div class="${fontCls}" style="font-size:0.95em;font-weight:700;color:#1a5c2a;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">${title}</div>
+        ${preview ? `<div class="${fontCls}" style="font-size:0.75em;color:#999;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;direction:rtl;">${preview}</div>` : ''}
         ${linkBox}
       </div>
-      <span style="font-size:0.65rem;color:#bbb;flex-shrink:0;">${e.date}</span>
+      <span style="font-size:0.65em;color:#bbb;flex-shrink:0;">${e.date}</span>
       <button class="icon-btn" onclick="event.stopPropagation();editEntry('${e.id}')" title="ترمیم" style="width:24px;height:24px;font-size:0.75rem;flex-shrink:0;">✏</button>
       <button class="icon-btn del" onclick="event.stopPropagation();deleteEntry('${e.id}')" title="حذف" style="width:24px;height:24px;font-size:0.75rem;flex-shrink:0;">🗑</button>
       <input type="checkbox" class="entry-select-cb" id="cb_${e.id}" onclick="event.stopPropagation()" onchange="onCheckboxChange()" style="width:16px;height:16px;flex-shrink:0;accent-color:#1a5c2a;">
@@ -2351,8 +2351,8 @@ function renderEntries(list) {
       <div style="margin-bottom:10px;">
         <div style="background:linear-gradient(90deg,${cat.color},${cat.color}cc);padding:6px 14px;border-radius:10px 10px 0 0;display:flex;align-items:center;gap:8px;">
           <span style="width:10px;height:10px;border-radius:50%;background:#fff;display:inline-block;opacity:0.8;flex-shrink:0;"></span>
-          <span style="font-family:'Noto Nastaliq Urdu',serif;font-weight:700;font-size:0.95rem;color:#fff;">${cat.name}</span>
-          <span style="font-size:0.72rem;color:rgba(255,255,255,0.75);margin-right:auto;">${grp.items.length} اندراج</span>
+          <span style="font-family:'Noto Nastaliq Urdu',serif;font-weight:700;font-size:0.95em;color:#fff;">${cat.name}</span>
+          <span style="font-size:0.72em;color:rgba(255,255,255,0.75);margin-right:auto;">${grp.items.length} اندراج</span>
         </div>
         <div style="border-radius:0 0 10px 10px;overflow:hidden;border:1.5px solid ${cat.color}44;border-top:none;box-shadow:0 2px 8px rgba(0,0,0,0.05);">
           ${grp.items.map(e => entryRowHTML(e)).join('')}
@@ -2365,7 +2365,7 @@ function renderEntries(list) {
     fullHTML += `
       <div style="margin-bottom:10px;">
         <div style="background:linear-gradient(90deg,#888,#aaa);padding:6px 14px;border-radius:10px 10px 0 0;display:flex;align-items:center;gap:8px;">
-          <span style="font-family:'Noto Nastaliq Urdu',serif;font-weight:700;font-size:0.95rem;color:#fff;">متفرق</span>
+          <span style="font-family:'Noto Nastaliq Urdu',serif;font-weight:700;font-size:0.95em;color:#fff;">متفرق</span>
         </div>
         <div style="border-radius:0 0 10px 10px;overflow:hidden;border:1.5px solid #aaa4;border-top:none;">
           ${ungrouped.map(e => entryRowHTML(e)).join('')}
@@ -2373,7 +2373,7 @@ function renderEntries(list) {
       </div>`;
   }
 
-  area.innerHTML = '<div id="entriesInner">' + fullHTML + '</div>';
+  area.innerHTML = '<div id="entriesInner" style="font-size:16px;">' + fullHTML + '</div>';
   area.appendChild(noE);
   applyFontSize();
 }
@@ -3412,17 +3412,17 @@ const FONT_MIN = 0.6;
 const FONT_MAX = 2.0;
 
 function applyFontSize() {
-  // Use real font-size scaling on the document root (not CSS `zoom`).
-  // `zoom` on a child can fail to update its scroll-container ancestor's
-  // scrollHeight correctly on Android Chrome/WebView, which is exactly what
-  // caused entries to become unreachable once zoomed. Scaling root font-size
-  // is genuine reflow: every rem-based text size grows/shrinks normally,
-  // and .entries-area (overflow-y:auto) always recomputes its scrollable
-  // region correctly because that's just standard box-model behavior — no
-  // zoom quirks involved. The diaryApp box itself uses vh (not rem), so it
-  // never changes size — only the content inside can now grow taller and
-  // scroll, exactly as intended.
-  document.documentElement.style.fontSize = (100 * currentFontSize) + '%';
+  // Scale ONLY entriesInner's own font-size (its children use em, scoped to
+  // this ancestor) — not the document root. Root-scaling was genuine reflow
+  // and did fix the scroll bug, but it also grew every rem-based header/
+  // toolbar/icon element sitewide, since rem is root-relative — that broke
+  // the fixed-size header (gear icon spilling out of its circle, Bismillah
+  // text ballooning). Scoping to entriesInner's own em-based subtree keeps
+  // the header/toolbar completely fixed while still being genuine reflow
+  // (not CSS `zoom`), so .entries-area's overflow-y:auto still computes the
+  // correct scrollable region with no quirks.
+  const inner = document.getElementById('entriesInner');
+  if (inner) inner.style.fontSize = (16 * currentFontSize) + 'px';
   const pct = Math.round(currentFontSize * 100);
   const disp = document.getElementById('fsDisplay');
   if (disp) disp.textContent = pct + '%';
