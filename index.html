@@ -78,12 +78,8 @@
     font-family: 'Noto Nastaliq Urdu', serif;
     background: var(--body-bg);
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 0;
     direction: rtl;
-    overflow: hidden;
   }
 
   /* ===== LOCK SCREEN ===== */
@@ -137,13 +133,12 @@
   .diary-wrapper {
     width: 100%;
     max-width: 820px;
+    margin: 0 auto;
     background: linear-gradient(160deg, #f0faf2 0%, var(--white) 60%, #fdf8e8 100%);
     border-radius: 18px;
     box-shadow: 0 20px 60px rgba(0,0,0,0.5), 0 0 0 3px var(--gold), inset 0 0 40px rgba(26,92,42,0.04);
     position: relative;
-    overflow: hidden;
-    height: 100vh;
-    max-height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
   }
@@ -497,18 +492,9 @@
 
   /* ===== ENTRIES AREA ===== */
   .entries-area {
-    flex: 1 1 0;
+    flex-shrink: 0;
     padding: 8px 48px 150px 12px;
-    overflow-y: auto;
-    min-height: 0;
-    max-height: none;
-    scrollbar-width: thin;
-    scrollbar-color: var(--gold) transparent;
   }
-
-  .entries-area::-webkit-scrollbar { width: 6px; }
-  .entries-area::-webkit-scrollbar-track { background: transparent; }
-  .entries-area::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 3px; }
 
   .no-entries {
     text-align: center;
@@ -1250,10 +1236,8 @@
     .diary-wrapper {
       max-width: 100%;
       width: 100%;
-      height: 100vh;
-      height: 100dvh;
-      max-height: 100vh;
-      max-height: 100dvh;
+      min-height: 100vh;
+      min-height: 100dvh;
       border-radius: 0;
       box-shadow: none;
     }
@@ -1442,6 +1426,8 @@
   <!-- Side category tabs -->
   <div class="cat-tabs" id="catTabs"></div>
 
+  <!-- STICKY HEADER GROUP (pinned to top during native page scroll) -->
+  <div id="stickyHeaderGroup" style="position:sticky;top:0;z-index:50;">
   <!-- HEADER (compact) -->
   <div class="diary-header" style="padding:6px 12px;display:flex;flex-direction:row;align-items:center;justify-content:space-between;min-height:0;gap:8px;position:relative;">
     <div style="font-size:1.5rem;color:#a5ffb8;line-height:1;position:relative;z-index:2;">﷽</div>
@@ -1464,7 +1450,7 @@
     <button type="button" onclick="refreshApp()" title="تازہ کریں" style="background:#111;border:1px solid #444;color:#f5d87a;font-size:0.85rem;border-radius:50%;width:26px;height:26px;cursor:pointer;line-height:1;flex-shrink:0;">🔄</button>
   </div>
   <div style="text-align:center;padding:0 0 4px;background:#0a1a0f;flex-shrink:0;">
-    <span id="appVersionDisplay" style="font-size:0.68rem;font-weight:700;color:#f5d87a;">ورژن: DRY003</span>
+    <span id="appVersionDisplay" style="font-size:0.68rem;font-weight:700;color:#f5d87a;">ورژن: DRY004</span>
   </div>
 
   <!-- TOOLS BAR (always visible, compact) -->
@@ -1508,6 +1494,7 @@
   <div class="cat-filter-bar" id="catFilterBar">
     <button class="cat-pill active" style="background:#1a5c2a" data-cat="all" onclick="filterCat('all',this)">🗂 سب</button>
   </div>
+  </div> <!-- /stickyHeaderGroup -->
 
   <!-- ENTRIES AREA -->
   <div class="entries-area" id="entriesArea">
@@ -1731,7 +1718,7 @@
 <script>
 
 // ===== APP VERSION =====
-const APP_VERSION = 'DRY003';
+const APP_VERSION = 'DRY004';
 
 // ===== PWA: SERVICE WORKER REGISTRATION (آف لائن سپورٹ) =====
 if ('serviceWorker' in navigator) {
